@@ -1,0 +1,53 @@
+.explore_possibilities{
+    padding: 15px 5%;
+    width: 100%;
+    background-color: var(--main-background-secondary);
+    margin-top: 100px;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+}
+
+.explore_possibilities .explore_possibilities_header{
+    width: min(1150px, 100%);
+    margin: 20px auto;
+    margin-bottom: 50px;
+}
+.explore_possibilities .explore_possibilities_header h1{
+    color: var(--primary-light-text);
+}
+
+
+.explore_possibilities .explore_possibilities_box{
+    width: min(1150px, 100%);
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+
+
+
+
+.explore_possibilities .explore_possibilities_item{
+    width: 30%;
+    background-color: var(--main-background-primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px;
+    border-radius: 10px;
+}
+.explore_possibilities .explore_possibilities_item h2{
+    color: var(--primary-light-text);
+}
+.explore_possibilities .explore_possibilities_item p{
+    color: var(--primary-lighter-text);
+    font-size: .9rem;
+    margin-top: 8px;
+}
+
+.explore_possibilities .explore_possibilities_item img{
+    width: 100%;
+}
+

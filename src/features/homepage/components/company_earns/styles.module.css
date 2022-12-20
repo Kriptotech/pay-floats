@@ -1,0 +1,83 @@
+.company_earns{
+    padding: 0 5%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+
+.company_earns .company_earns_header{
+    width: min(1150px, 100%);
+    margin: 0px auto;
+    margin-bottom: 30px;
+}
+.company_earns .company_earns_header h1{
+    font-size: 1.5rem;
+    color: var(--primary-light-text);
+}
+.company_earns .company_earns_header p{
+    color: var(--primary-lighter-text);
+    margin-top: 8px;
+    font-size: .9rem;
+}
+
+
+
+
+.company_earns .company_earns_box{
+    width: min(1150px, 100%);
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.company_earns .company_earns_content{
+    width: 23%;
+    background-color: var(--main-background-secondary);
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .5s;
+}
+.company_earns .company_earns_content h1{
+    font-size: .9rem;
+    color: var(--primary-light-text);
+}
+.company_earns .company_earns_content p{
+    color: var(--primary-lighter-text);
+    margin-top: 8px;
+    color: var(--green-primary-dark);
+    font-size: .8rem;
+}
+
+.company_earns .company_earns_content:hover{
+    scale: .9;
+}
+
+
+
+
+.company_earns .company_earns_footer{
+    width: min(1150px, 100%);
+    margin: 0px auto;
+}
+.company_earns .company_earns_footer a{
+    text-decoration: none;
+    color: var(--primary-dark-text);
+    background-color: var(--primary-light-yellow);
+    display: inline-flex;
+    margin-top: 30px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    align-items: center;
+    gap: 5px;
+    transition: .5s;
+}
+.company_earns .company_earns_footer a:hover{
+    padding-right: 50px;
+    opacity: .8;
+}
+.company_earns .company_earns_footer a:active{
+    opacity: 1;
+}

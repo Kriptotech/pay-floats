@@ -1,0 +1,45 @@
+.trust{
+    padding: 15px 5%;
+    width: 100%;
+    background-color: var(--main-background-secondary);
+    padding-top: 100px;
+}
+.trust .trust_box{
+    width: min(1150px, 100%);
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.trust .trust_left{
+    width: 45%;
+}
+.trust .trust_left h1{
+    font-size: 2rem;
+    color: var(--primary-light-text);
+}
+
+
+.trust .trust_left ul li{
+    margin-left: 20px;
+    margin-top: 50px;
+}
+.trust .trust_left ul li h2{
+    font-size: 1.3rem;
+    color: var(--primary-light-text);
+}
+.trust .trust_left ul li p{
+    color: var(--primary-lighter-text);
+    margin-top: 8px;
+}
+
+
+
+.trust .trust_right{
+    width: 50%;
+}
+.trust .trust_right img{
+    width: 100%;
+}
+

@@ -1,0 +1,35 @@
+.need_help{
+    padding: 0 5%;
+    padding-top: 120px;
+    background-color: var(--main-background-secondary);
+    padding-bottom: 50px;
+}
+
+.need_help .need_help_header{
+    width: min(1150px, 100%);
+    margin: 0px auto;
+    margin-bottom: 50px;
+}
+
+
+
+.need_help .need_help_box{
+    width: min(1150px, 100%);
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.need_help .need_help_content{
+    width: 20%;
+}
+.need_help .need_help_content h1{
+    font-size: 1.5rem;
+    color: var(--primary-lighter-text);
+}
+.need_help .need_help_content p{
+    color: var(--primary-light-text);
+    margin-top: 8px;
+}

@@ -1,0 +1,74 @@
+:root {
+    /**
+    * dark theme colors 
+    */
+
+    --main-background-secondary: rgb(24, 26, 32);
+    --main-background-primary: rgb(11, 14, 17);
+
+    --action-primary: hsl(216, 15%, 52%);
+    --action-secondary: hsl(218, 23%, 23%);
+    --action-tertiary: hsl(225, 17%,17%);
+
+    --foreground-primary: hsl(210, 38%, 95%);
+    --foreground-secondary: hsl(211, 25%, 84%);
+    --foreground-tertiary: hsl(214, 20%, 69%);
+
+    --white: rgb(255, 255, 255);
+    --outline: rgba(178, 182, 187, 0.15);
+
+
+    --primary-yellow: rgb(240, 185, 11);
+    --primary-light-yellow: rgb(255, 223, 44);
+    --primary-light-text: rgb(234, 236, 239);
+    --primary-lighter-text: rgb(247, 249, 252);
+    --primary-dark-text: rgb(34, 34, 33);
+    --green-primary-light: rgb(131, 250, 176);
+    --green-primary-dark: rgba(84, 230, 140, 0.829);
+    --violet: rgba(157, 109, 235, 0.856);
+    --violet-hover: rgba(157, 80, 235, 0.3);
+    --violet-light-bg: rgba(157, 80, 235, 0.08); 
+    
+
+    
+    /* --accent: hsl(229, 76%, 66%);
+    --text-white: rgb(234, 233, 236);
+    --text-dark: rgb(80, 79, 82);
+    --text-white-dark: rgb(163, 163, 165);
+    --yellow-primary: rgba(255, 229, 81, 0.5);
+    --yellow-primary-hover: rgba(247, 200, 99, 0.755);
+    --yellow-primary-hover-bg: rgba(247, 200, 99, .5);
+    --text-yellow: rgba(255, 175, 1, 0.932);
+    --text-tomato: rgb(253, 111, 101);
+    --blue-primary-dark: rgb(107, 159, 255);
+    --blue-primary-light: rgb(138, 193, 255);
+    --blue-violet: rgb(86, 124, 247);
+    */
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    color: #fff;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    background-color: var(--main-background-primary);
+}
+.app {
+    z-index: 1;
+    overflow: hidden;
+}
+::-webkit-scrollbar {
+    background: transparent;
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background: hsl(229, 7%, 54%);
+    border-radius: 15px;
+}

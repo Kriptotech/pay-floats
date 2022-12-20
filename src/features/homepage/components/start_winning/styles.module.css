@@ -1,0 +1,33 @@
+.start_winning{
+    padding: 50px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.start_winning h1{
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    color: var(--primary-lighter-text);
+}
+
+.start_winning a{
+    display: block;
+    text-decoration: none;
+    color: var(--primary-dark-text);
+    background-color: var(--primary-light-yellow);
+    padding: 15px 30px;
+    border-radius: 5px;
+    align-items: center;
+    gap: 5px;
+    transition: .5s;
+}
+.start_winning a:hover{
+    padding: 15px 50px;
+    opacity: .8;
+}
+.start_winning a:active{
+    opacity: 1;
+}
