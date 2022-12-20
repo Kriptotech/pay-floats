@@ -1,8 +1,14 @@
 import style from './styles.module.css'
 import Image from './image.png'
+import {useNavigate} from 'react-router-dom'
 import {Header} from '../../../../components/header/Index'
 
 export function LoginContainer() {
+  const navigate = useNavigate()
+
+  function handleSubmit(params) {
+    navigate('/dashboard')
+  }
 
   return (
     <>
@@ -12,7 +18,7 @@ export function LoginContainer() {
           className={style.login_container_left}
           data-aos="fade-left"
         >
-          <form>
+        <form onSubmit={(e)=>handleSubmit(e)}>
             <h1>SEJA BEM VINDO</h1>
             <p>Faça login na plataforma interna</p>
             <input
@@ -25,7 +31,7 @@ export function LoginContainer() {
               type="password"
               placeholder="Sua senha"
             />
-            <a href='/signup'>Não tem uma conta? registe-se</a>
+            <a href='/dashboard'>Não tem uma conta? registe-se</a>
             <button>ENTRAR</button>
           </form>
         </div>

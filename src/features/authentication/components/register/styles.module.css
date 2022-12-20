@@ -121,7 +121,6 @@
     .register_container {
         align-items: center;
         justify-content: center;
-        background: var(--white);
         padding: 5%;
     }
     .register_container .register_container_left{

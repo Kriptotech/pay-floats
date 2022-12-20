@@ -1,8 +1,14 @@
 import style from './styles.module.css'
 import Image from './image.png'
+import {useNavigate} from 'react-router-dom'
 import {Header} from '../../../../components/header/Index'
 
 export function RegisterContainer() {
+  const navigate = useNavigate()
+
+  function handleSubmit(params) {
+    navigate('/dashboard')
+  }
 
   return (
     <>
@@ -12,7 +18,7 @@ export function RegisterContainer() {
           className={style.register_container_left}
           data-aos="fade-left"
         >
-          <form>
+          <form onSubmit={(e)=>handleSubmit(e)}>
             <h1>CRIE UMA CONTA</h1>
             <input
               required
@@ -34,7 +40,7 @@ export function RegisterContainer() {
               type="password"
               placeholder="Sua senha"
             />
-            <a href='/signin'>Já tem uma conta? faça login</a>
+            <a href='/dashboard'>Já tem uma conta? faça login</a>
             <button>CADASTRAR-SE</button>
           </form>
         </div>

@@ -28,40 +28,12 @@
 }
 
 
-.main_header nav .auth_links{
-    display: flex;
-    align-items: center;
-    gap: 30px;
-}
-.main_header nav .auth_links a svg{
-    width: 15px;
-    height: 15px;
-}
-.main_header nav .auth_links a{
-    background-color: var(--primary-light-yellow);
-    text-decoration: none;
-    color: var(--primary-dark-text);
-    font-size: .9rem;
-    padding: 8px 24px;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    border-radius: 5px;
-    transition: .5s;
-}
-.main_header nav .auth_links a:hover{
-    padding-left: 40px;
-    opacity: .8;
-}
-.main_header nav .auth_links a:active{
-    opacity: .8;
-}
-
 
 
 .main_header nav button{
     background: none;
     border: none;
+    cursor: pointer;
 }
 .main_header nav button svg{
     color: var(--primary-yellow);
@@ -71,7 +43,7 @@
 
 
 .main_header nav .sidebar{
-    width: 70%;
+    width: min(400px, 80%);
     height: 100vh;
     position: fixed;
     left: 0;
@@ -117,13 +89,4 @@
 
 
 
-@media (min-width: 600px){
-    .main_header nav button{
-        display: none;
-    }
-}
-@media (max-width: 600px){
-    .main_header nav .auth_links{
-        display: none;
-    }
-}
+

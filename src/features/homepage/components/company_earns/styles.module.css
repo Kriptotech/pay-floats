@@ -81,3 +81,21 @@
 .company_earns .company_earns_footer a:active{
     opacity: 1;
 }
+
+
+
+@media (max-width: 1250px) {
+    .company_earns .company_earns_content{
+        width: 30%;
+    }
+}
+@media (max-width: 700px) {
+    .company_earns .company_earns_content{
+        width: 47%;
+    }
+}
+@media (max-width: 570px) {
+    .company_earns .company_earns_content{
+        width: 100%;
+    }
+}

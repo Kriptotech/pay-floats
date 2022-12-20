@@ -33,3 +33,23 @@
     color: var(--primary-light-text);
     margin-top: 8px;
 }
+
+
+
+
+
+@media (max-width: 800px) {
+    .need_help .need_help_content{
+        width: 28%;
+    }
+}
+@media (max-width: 640px) {
+    .need_help .need_help_content{
+        width: 45%;
+    }
+}
+@media (max-width: 450px) {
+    .need_help .need_help_content{
+        width: 100%;
+    }
+}

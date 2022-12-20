@@ -69,6 +69,34 @@
 }
 .create_portfolio .create_portfolio_right img{
     width: 100%;
-    height: 100%;
 }
 
+
+
+@media (max-width:900px) {
+    .create_portfolio .create_portfolio_right{
+        width: 40%;
+    }
+    .create_portfolio .create_portfolio_left{
+        width: 55%;
+    }
+}
+
+
+@media (max-width:710px) {
+    .create_portfolio .create_portfolio_box{
+        flex-wrap: wrap;
+    }
+    .create_portfolio .create_portfolio_right{
+        width: 60%;
+    }
+    .create_portfolio .create_portfolio_left{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+}
+@media (max-width:400px) {
+    .create_portfolio .create_portfolio_right{
+        width: 90%;
+    }
+}

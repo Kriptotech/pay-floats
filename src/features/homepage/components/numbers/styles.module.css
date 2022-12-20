@@ -8,11 +8,11 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 20px;
 }
 
 .numbers .numbers_content{
     width: 20%;
+    margin-bottom: 50px;
 }
 .numbers .numbers_content h1{
     font-size: 1.5rem;
@@ -21,4 +21,22 @@
 .numbers .numbers_content p{
     color: var(--primary-light-text);
     margin-top: 8px;
+}
+
+
+
+@media (max-width: 800px) {
+    .numbers .numbers_content{
+        width: 28%;
+    }
+}
+@media (max-width: 640px) {
+    .numbers .numbers_content{
+        width: 45%;
+    }
+}
+@media (max-width: 450px) {
+    .numbers .numbers_content{
+        width: 100%;
+    }
 }

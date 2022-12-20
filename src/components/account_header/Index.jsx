@@ -8,7 +8,7 @@ import { useState } from "react";
 
 import style from "./styles.module.css";
 
-export function Header() {
+export function AccountHeader() {
 
     const [sidebarVisible, setSidebarVisible] = useState(false);
 
@@ -19,10 +19,6 @@ export function Header() {
                     <a href="/">BINANCE</a>
                 </div>
 
-                <div className={style.auth_links}>
-                    <a href="/signin"><UserCircle />Entrar</a>
-                    <a href="/signup"><UserCirclePlus />Registar</a>
-                </div>
 
                 {
                     !sidebarVisible ?

@@ -43,3 +43,35 @@
     width: 100%;
 }
 
+
+
+
+
+
+@media (max-width:900px) {
+    .trust .trust_right{
+        width: 40%;
+    }
+    .trust .trust_left{
+        width: 55%;
+    }
+}
+
+
+@media (max-width:710px) {
+    .trust .trust_box{
+        flex-wrap: wrap;
+    }
+    .trust .trust_right{
+        width: 60%;
+    }
+    .trust .trust_left{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+}
+@media (max-width:400px) {
+    .trust .trust_right{
+        width: 90%;
+    }
+}
