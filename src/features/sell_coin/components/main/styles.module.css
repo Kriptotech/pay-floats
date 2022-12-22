@@ -1,0 +1,169 @@
+.sell_coin {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    min-height: 100vh;
+}
+
+.sell_coin .sell_coin_header {
+    display: flex;
+    padding: 0 10%;
+}
+.sell_coin .sell_coin_header h1 {
+    opacity: 0.8;
+}
+
+.sell_coin .sell_coin_row_container {
+    width: 100%;
+    padding: 0 10%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.sell_coin .sell_coin_row_container .sell_coin_card {
+    width: 38%;
+}
+.sell_coin .sell_coin_row_container .sell_coin_card .sell_coin_card_box {
+    width: 100%;
+    background: var(--white);
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px var(--outline);
+    padding-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.sell_coin .sell_coin_row_container .sell_coin_card img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 0 15px;
+    flex-shrink: 0;
+}
+.sell_coin .sell_coin_row_container .sell_coin_card span {
+    color: var(--primary-dark-text);
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-top: 10px;
+    opacity: 0.8;
+    padding: 0 15px;
+}
+.sell_coin .sell_coin_row_container .sell_coin_card p {
+    color: var(--primary-dark-text);
+    font-size: 0.9rem;
+    margin-top: 10px;
+    padding: 0 15px;
+}
+.sell_coin .sell_coin_row_container .sell_coin_card .sell_coin_card_box div {
+    margin-top: 30px;
+    height: 60px;
+    width: 100%;
+}
+
+.sell_coin .sell_coin_row_container form {
+    width: 60%;
+    background: var(--white);
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px var(--outline);
+    padding: 30px 0px;
+    color: var(--primary-dark-text);
+}
+.sell_coin .sell_coin_row_container form h4 {
+    opacity: 0.8;
+    margin-bottom: 5px;
+    padding: 0 15px;
+}
+.sell_coin .sell_coin_row_container form p {
+    padding: 0 15px;
+    opacity: 0.8;
+    font-size: 0.8rem;
+    padding-bottom: 25px;
+}
+.sell_coin .sell_coin_row_container form div {
+    padding: 0 15px;
+    padding-bottom: 5px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.sell_coin .sell_coin_row_container form div input,
+.sell_coin .sell_coin_row_container form div select {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid var(--violet-hover);
+    color: var(--primary-dark-text);
+    padding: 0 10px;
+}
+.sell_coin .sell_coin_row_container form div input::placeholder,
+.sell_coin .sell_coin_row_container form div select::placeholder {
+    color: var(--primary-dark-text);
+    opacity: 0.8;
+}
+.sell_coin .sell_coin_row_container form div input:focus {
+    border: 1px solid var(--violet-hover);
+}
+.sell_coin .sell_coin_row_container form button {
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    color: #ffffffff;
+    background: var(--violet);
+    padding: 15px 30px;
+    float: right;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.sell_coin .sell_coin_row_container form button:hover {
+    opacity: 0.8;
+}
+.sell_coin .sell_coin_row_container form button:active {
+    background: none;
+}
+
+.sell_coin .sell_coin_row_container .sell_coin_row_box .sell_coin_row {
+    width: 50%;
+    border-radius: 5px;
+    padding: 0 5px;
+    border: 0.3px solid var(--violet-hover);
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+.sell_coin .sell_coin_row_container .sell_coin_row_box .sell_coin_row input {
+    flex: 1;
+    background: none;
+    outline: none;
+    border: none;
+    padding: 0 5px;
+    height: 100%;
+    color: #888;
+}
+
+@media (max-width: 1200px) {
+    .sell_coin .sell_coin_header {
+        padding: 0 2%;
+    }
+    .sell_coin .sell_coin_row_container {
+        padding: 0 2%;
+    }
+    .sell_coin .sell_coin_row_container form {
+        width: 70%;
+    }
+}
+@media (max-width: 1050px) {
+    .sell_coin .sell_coin_header {
+        padding: 0 5%;
+    }
+    .sell_coin .sell_coin_row_container form {
+        width: 90%;
+    }
+}
+@media (max-width: 900px) {
+    .sell_coin .sell_coin_row_container form {
+        width: 100%;
+    }
+}

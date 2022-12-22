@@ -8,7 +8,7 @@
     border: 1px solid var(--main-background-primary);
 }
 
-.main_header nav{
+.main_header nav {
     padding: 15px 30px;
     width: 100%;
     display: flex;
@@ -16,33 +16,28 @@
     justify-content: space-between;
 }
 
-
-.main_header nav .logo_container{
+.main_header nav .logo_container {
     display: flex;
     align-items: center;
 }
-.main_header nav .logo_container a{
+.main_header nav .logo_container a {
     text-decoration: none;
     color: var(--primary-yellow);
     font-weight: 600;
 }
 
-
-
-
-.main_header nav button{
+.main_header nav button {
     background: none;
     border: none;
     cursor: pointer;
 }
-.main_header nav button svg{
+.main_header nav button svg {
     color: var(--primary-yellow);
     width: 40px;
     height: 40px;
 }
 
-
-.main_header nav .sidebar{
+.main_header nav .sidebar {
     width: min(400px, 80%);
     height: 100vh;
     position: fixed;
@@ -52,10 +47,10 @@
     border-right: 1px solid var(--main-background-secondary);
     padding: 15px 5%;
 }
-.main_header nav .sidebar a{
+.main_header nav .sidebar a {
     display: block;
 }
-.main_header nav .sidebar .sidebar_logo{
+.main_header nav .sidebar .sidebar_logo {
     display: block;
     text-decoration: none;
     color: var(--primary-yellow);
@@ -65,28 +60,54 @@
     font-size: 1.5rem;
 }
 
-.main_header nav .sidebar .sidebar_auth_links a{
-    background-color: var(--primary-light-yellow);
+.main_header nav .sidebar .sidebar_auth_links a {
+    background-color: var(--main-background-secondary);
     text-decoration: none;
     color: var(--primary-dark-text);
-    font-size: .9rem;
+    font-size: 0.9rem;
     padding: 15px 24px;
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-    gap: 5px;
     border-radius: 5px;
-    transition: .5s;
+    transition: 0.5s;
 }
-.main_header nav .sidebar .sidebar_auth_links a:hover{
+.main_header nav .sidebar .sidebar_auth_links a:hover {
     padding-left: 40px;
-    opacity: .8;
+    opacity: 0.8;
 }
-.main_header nav .sidebar .sidebar_auth_links a:active{
-    opacity: .8;
+.main_header nav .sidebar .sidebar_auth_links a:active {
+    opacity: 0.4;
 }
-
-
-
-
-
+.main_header nav .sidebar .sidebar_auth_links a svg {
+    color: var(--primary-dark-text);
+    width: 15px;
+    height: 15px;
+    margin-right: 8px;
+}
+.main_header nav .sidebar .sidebar_auth_links button {
+    width: 100%;
+    background-color: var(--primary-light-yellow);
+    color: var(--primary-dark-text);
+    font-size: 0.9rem;
+    padding: 15px 24px;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.main_header nav .sidebar .sidebar_auth_links button svg {
+    color: var(--primary-dark-text);
+    width: 15px;
+    height: 15px;
+    margin-right: 8px;
+}
+.main_header nav .sidebar .sidebar_auth_links button:hover {
+    padding-left: 40px;
+    opacity: 0.8;
+}
+.main_header nav .sidebar .sidebar_auth_links button:active {
+    opacity: 0.4;
+}

@@ -1,0 +1,49 @@
+.buy_coin {
+    flex: 1;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    min-height: 100vh;
+}
+
+.buy_coin .buy_coin_list_container {
+    padding: 0 5%;
+    margin-top: 30px;
+    width: 100%;
+}
+.buy_coin .buy_coin_list_box {
+    padding: 20px;
+    margin-top: 30px;
+    width: 100%;
+    background: var(--main-background-secondary);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.233);
+}
+.buy_coin .buy_coin_list_box div {
+    padding: 8px 0px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.buy_coin .buy_coin_list_box div button {
+    float: right;
+    border: none;
+    background-color: var(--primary-light-yellow);
+    padding: 10px 20px;
+    color: #666;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.buy_coin .buy_coin_list_box div button:hover {
+    opacity: 0.8;
+}
+.buy_coin .buy_coin_list_box div button:active {
+    opacity: 0.2;
+}
+
+.buy_coin .buy_coin_list_box div p {
+    color: #555;
+    font-size: 0.95rem;
+}
+.buy_coin .buy_coin_list_box div p span {
+    color: var(--violet);
+    font-weight: 500;
+}

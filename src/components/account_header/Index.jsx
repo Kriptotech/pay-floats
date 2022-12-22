@@ -1,45 +1,66 @@
-import { 
-    UserCircle,
+import {
     UserCirclePlus,
     List,
     XCircle,
+    PlusCircle,
+    HouseLine,
+    CurrencyCircleDollar,
 } from "phosphor-react";
 import { useState } from "react";
 
 import style from "./styles.module.css";
 
 export function AccountHeader() {
-
     const [sidebarVisible, setSidebarVisible] = useState(false);
 
     return (
         <header className={style.main_header}>
             <nav>
                 <div className={style.logo_container}>
-                    <a href="/">BINANCE</a>
+                    <a href="/dashboard">BINANCE</a>
                 </div>
 
+                {!sidebarVisible ? (
+                    <button onClick={() => setSidebarVisible(true)}>
+                        <List />
+                    </button>
+                ) : (
+                    <button onClick={() => setSidebarVisible(false)}>
+                        <XCircle />
+                    </button>
+                )}
 
-                {
-                    !sidebarVisible ?
-                    <button onClick={()=>setSidebarVisible(true)}><List /></button> 
-                    :
-                    <button onClick={()=>setSidebarVisible(false)}><XCircle /></button>
-
-                }
-
-                {
-                    sidebarVisible &&
+                {sidebarVisible && (
                     <div className={style.sidebar}>
-                        <a href="/"  className={style.sidebar_logo}>BINANCE</a>
+                        <a href="/dashboard" className={style.sidebar_logo}>
+                            BINANCE
+                        </a>
 
                         <div className={style.sidebar_auth_links}>
-                            <a href="/signin"><UserCircle />Entrar</a>
-                            <a href="/signup"><UserCirclePlus />Registar</a>
+                            <a href="/dashboard">
+                                <HouseLine />
+                                Dashboard
+                            </a>
+                            <a href="/profile">
+                                <UserCirclePlus />
+                                Perfil
+                            </a>
+                            <a href="/request_money">
+                                <CurrencyCircleDollar />
+                                Requisitar dinheiro
+                            </a>
+                            <a href="/sell_coin">
+                                <PlusCircle />
+                                Vender moeda
+                            </a>
+
+                            <button>
+                                <XCircle />
+                                Sair
+                            </button>
                         </div>
                     </div>
-                }
-
+                )}
             </nav>
         </header>
     );

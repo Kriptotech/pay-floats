@@ -10,12 +10,10 @@ function App() {
         Aos.init({ duration: 600 });
     }, []);
 
-
-
     return (
         <MainContext>
             <div className="app">
-                <Router /> 
+                <Router />
             </div>
         </MainContext>
     );

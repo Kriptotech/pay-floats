@@ -1,14 +1,15 @@
 import React from "react";
+
 import { AccountHeader } from "../components/account_header/Index";
 import { BottomNavigation } from "../components/bottom_navigation/Index";
-import { DashboardContainer } from "../features/dashboard/components/main/Index";
+import { Main } from "../features/profilepage/components/main/Index";
 
-export function Dashboard() {
+export function Profile() {
     return (
         <div>
             <AccountHeader />
-            <DashboardContainer />
-            <BottomNavigation route="dashboard" />
+            <Main />
+            <BottomNavigation route={"profile"} />
         </div>
     );
 }
