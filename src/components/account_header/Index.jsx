@@ -5,6 +5,7 @@ import {
     PlusCircle,
     HouseLine,
     CurrencyCircleDollar,
+    CurrencyDollar,
 } from "phosphor-react";
 import { useState } from "react";
 
@@ -44,6 +45,10 @@ export function AccountHeader() {
                             <a href="/profile">
                                 <UserCirclePlus />
                                 Perfil
+                            </a>
+                            <a href="/deposit_money">
+                                <CurrencyDollar />
+                                Depositar dinheiro
                             </a>
                             <a href="/request_money">
                                 <CurrencyCircleDollar />

@@ -9,6 +9,7 @@ import { BuyCoin } from "../pages/BuyCoin";
 import { SellCoin } from "../pages/SellCoin";
 import { Profile } from "../pages/Profile";
 import { RequestMoney } from "../pages/RequestMoney";
+import { DepositMoney } from "../pages/DepositMoney";
 
 export function Router() {
     return (
@@ -49,6 +50,14 @@ export function Router() {
                         element={
                             <PrivateRoute>
                                 <Profile />
+                            </PrivateRoute>
+                        }
+                    />
+                    <Route
+                        path="/deposit_money"
+                        element={
+                            <PrivateRoute>
+                                <DepositMoney />
                             </PrivateRoute>
                         }
                     />

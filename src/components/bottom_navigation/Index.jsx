@@ -29,17 +29,17 @@ export function BottomNavigation({ route }) {
                 />
                 {route === "dashboard" && <span>Inicio</span>}
             </button>
-            <button onClick={() => navigateToPage("sell_coin")}>
+            <button onClick={() => navigateToPage("deposit_money")}>
                 <PlusCircle
                     color={
-                        route === "sell_coin"
+                        route === "deposit_money"
                             ? "rgb(255, 223, 44)"
                             : "rgba(157, 109, 235, 1)"
                     }
                     weight="fill"
                     size={35}
                 />
-                {route === "sell_coin" && <span>Vender</span>}
+                {route === "deposit_money" && <span>Depositar</span>}
             </button>
             <button onClick={() => navigateToPage("request_money")}>
                 <CurrencyCircleDollar
