@@ -10,6 +10,9 @@ import { SellCoin } from "../pages/SellCoin";
 import { Profile } from "../pages/Profile";
 import { RequestMoney } from "../pages/RequestMoney";
 import { DepositMoney } from "../pages/DepositMoney";
+import { Termspage } from "../pages/Terms";
+import { Politicspage } from "../pages/Politics";
+import { AddCredit } from "../pages/AddCredit";
 
 export function Router() {
     return (
@@ -19,6 +22,8 @@ export function Router() {
                     <Route path="/" element={<Homepage />} />
                     <Route path="/signin" element={<Login />} />
                     <Route path="/signup" element={<Register />} />
+                    <Route path="/terms" element={<Termspage />} />
+                    <Route path="/politics" element={<Politicspage />} />
                     <Route path="/dashboard" element={<Dashboard />} />
 
                     <Route
@@ -58,6 +63,14 @@ export function Router() {
                         element={
                             <PrivateRoute>
                                 <DepositMoney />
+                            </PrivateRoute>
+                        }
+                    />
+                    <Route
+                        path="/add_credit"
+                        element={
+                            <PrivateRoute>
+                                <AddCredit />
                             </PrivateRoute>
                         }
                     />

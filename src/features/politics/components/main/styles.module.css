@@ -1,0 +1,25 @@
+.terms {
+    padding: 0 5%;
+    width: 100%;
+}
+.terms .terms_box {
+    width: min(1150px, 100%);
+    margin: 20px auto;
+    margin-top: 150px;
+}
+.terms .terms_box h1 {
+    text-align: center;
+}
+.terms .terms_box h2 {
+    margin-top: 40px;
+}
+.terms .terms_box p {
+    margin-top: 15px;
+    text-align: justify;
+}
+
+@media (max-width: 400px) {
+    .terms .terms_left h1 {
+        font-size: 1.5rem;
+    }
+}

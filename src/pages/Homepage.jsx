@@ -1,5 +1,6 @@
 import React from "react";
 
+import { Footer } from "../components/footer/Index";
 import { Header } from "../components/header/Index";
 import { CompanyEarns } from "../features/homepage/components/company_earns/Index";
 import { CreatePortfolio } from "../features/homepage/components/create_portfolio/Index";
@@ -20,8 +21,9 @@ export function Homepage() {
             <CompanyEarns />
             <ExplorePossibilities />
             <Trust />
-            <NeedHelp />
+            {/* <NeedHelp /> */}
             <StartWinning />
+            <Footer />
         </div>
     );
 }

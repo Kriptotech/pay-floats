@@ -18,7 +18,7 @@ export function AccountHeader() {
         <header className={style.main_header}>
             <nav>
                 <div className={style.logo_container}>
-                    <a href="/dashboard">BINANCE</a>
+                    <a href="/dashboard">PayFloat</a>
                 </div>
 
                 {!sidebarVisible ? (
@@ -34,7 +34,7 @@ export function AccountHeader() {
                 {sidebarVisible && (
                     <div className={style.sidebar}>
                         <a href="/dashboard" className={style.sidebar_logo}>
-                            BINANCE
+                            PayFloat
                         </a>
 
                         <div className={style.sidebar_auth_links}>
@@ -45,6 +45,14 @@ export function AccountHeader() {
                             <a href="/profile">
                                 <UserCirclePlus />
                                 Perfil
+                            </a>
+                            <a href="/add_credit">
+                                <CurrencyDollar />
+                                Adicionar saldo
+                            </a>
+                            <a href="/profile">
+                                <CurrencyDollar />
+                                verificar saldo
                             </a>
                             <a href="/deposit_money">
                                 <CurrencyDollar />

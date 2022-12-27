@@ -1,8 +1,8 @@
-.numbers{
+.numbers {
     padding: 0 5%;
     margin-top: 100px;
 }
-.numbers .numbers_box{
+.numbers .numbers_box {
     width: min(1150px, 100%);
     margin: 0px auto;
     display: flex;
@@ -10,33 +10,31 @@
     flex-wrap: wrap;
 }
 
-.numbers .numbers_content{
-    width: 20%;
+.numbers .numbers_content {
+    width: 30%;
     margin-bottom: 50px;
 }
-.numbers .numbers_content h1{
+.numbers .numbers_content h1 {
     font-size: 1.5rem;
     color: var(--primary-lighter-text);
 }
-.numbers .numbers_content p{
+.numbers .numbers_content p {
     color: var(--primary-light-text);
     margin-top: 8px;
 }
 
-
-
 @media (max-width: 800px) {
-    .numbers .numbers_content{
+    .numbers .numbers_content {
         width: 28%;
     }
 }
 @media (max-width: 640px) {
-    .numbers .numbers_content{
+    .numbers .numbers_content {
         width: 45%;
     }
 }
 @media (max-width: 450px) {
-    .numbers .numbers_content{
+    .numbers .numbers_content {
         width: 100%;
     }
 }

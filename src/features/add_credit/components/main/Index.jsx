@@ -13,17 +13,14 @@ export function Main() {
     return (
         <div className={style.deposit_money}>
             <div className={style.deposit_money_header}>
-                <h1>Depositar dinheiro</h1>
+                <h1>Adicionar saldo</h1>
             </div>
 
             <div className={style.deposit_money_row_container}>
                 <form onSubmit={(e) => submitForm(e)}>
-                    <h4>
-                        deposite dinheiro para uma conta de banco ou carteira
-                        movel
-                    </h4>
+                    <h4>Adicione saldo na sua conta da plataforma</h4>
                     <p>
-                        Preencha os campos abaixo para depositar dinheiro, caso
+                        Preencha os campos abaixo para adicionar saldo, caso
                         tenha cometido um erro, contacte o administrador para
                         corrigi-lo.
                     </p>
@@ -46,7 +43,7 @@ export function Main() {
                     </div>
                     <br />
                     <p style={{ color: "violet" }}>{message}</p>
-                    <button>DEPOSITAR</button>
+                    <button>PROSSEGUIR</button>
                 </form>
             </div>
         </div>

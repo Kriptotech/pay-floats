@@ -1,0 +1,19 @@
+.footer {
+    width: 100%;
+    padding: 20px 5%;
+    background-color: var(--main-background-secondary);
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer div {
+    margin-right: 50px;
+}
+.footer div a {
+    display: block;
+    margin-top: 18px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.footer div a:hover {
+    scale: 0.9;
+}
