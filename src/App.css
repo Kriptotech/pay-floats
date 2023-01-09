@@ -3,9 +3,9 @@
     * dark theme colors 
     */
 
-    --main-background-primary: rgb(240, 239, 239);
+    --main-background-primary: rgba(240, 239, 239, 0.39);
     --main-background-secondary: rgb(255, 255, 255);
-    --main-background-tertiary: rgb(211, 211, 211);
+    --main-background-tertiary: rgba(226, 225, 225, 0.548);
 
     --white: rgb(255, 255, 255);
     --outline: rgba(178, 182, 187, 0.15);

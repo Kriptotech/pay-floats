@@ -80,7 +80,7 @@
     position: fixed;
     left: 0;
     top: 0;
-    background-color: var(--main-background-primary);
+    background-color: rgba(240, 239, 239, 1);
     border-right: 1px solid var(--main-background-secondary);
     padding: 15px 5%;
 }

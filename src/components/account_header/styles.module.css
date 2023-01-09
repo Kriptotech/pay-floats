@@ -43,7 +43,7 @@
     position: fixed;
     left: 0;
     top: 0;
-    background-color: var(--main-background-primary);
+    background-color: rgba(240, 239, 239, 1);
     border-right: 1px solid var(--main-background-secondary);
     padding: 15px 0;
 }
@@ -66,6 +66,7 @@
     overflow-y: scroll;
     height: 90vh;
     padding: 0 5%;
+    padding-bottom: 150px;
 }
 .main_header nav .sidebar .sidebar_auth_links a {
     background-color: var(--main-background-secondary);

@@ -28,11 +28,3 @@
 .main .profile_content p {
     margin-top: 10px;
 }
-
-.main .profile_content p:last-child {
-    margin-top: 20px;
-    margin-bottom: 10px;
-    font-size: 0.9rem;
-    line-height: 20px;
-    text-align: justify;
-}

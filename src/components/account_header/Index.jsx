@@ -40,19 +40,15 @@ export function AccountHeader() {
                         <div className={style.sidebar_auth_links}>
                             <a href="/dashboard">
                                 <HouseLine />
-                                Dashboard
-                            </a>
-                            <a href="/profile">
-                                <UserCirclePlus />
-                                Perfil
+                                Inicio
                             </a>
                             <a href="/add_credit">
                                 <CurrencyDollar />
                                 Adicionar saldo
                             </a>
-                            <a href="/profile">
+                            <a href="/carteiras">
                                 <CurrencyDollar />
-                                verificar saldo
+                                Carteiras
                             </a>
                             <a href="/deposit_money">
                                 <CurrencyDollar />
@@ -65,6 +61,10 @@ export function AccountHeader() {
                             <a href="/sell_coin">
                                 <PlusCircle />
                                 Vender moeda
+                            </a>
+                            <a href="/profile">
+                                <UserCirclePlus />
+                                Perfil
                             </a>
 
                             <button>

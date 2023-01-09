@@ -1,28 +1,54 @@
 .dashboard {
     min-height: 100vh;
-    margin-top: 100px;
+    margin-top: 60px;
     padding-bottom: 100px;
     z-index: 1;
 }
 
-.dashboard .selButton {
+.dashboard .dashboard_boxes {
+    display: flex;
+    justify-content: space-between;
     width: 100%;
     padding: 0 5%;
-    height: 40px;
+    margin-top: 40px;
 }
-.dashboard .selButton button {
-    float: right;
-    height: 100%;
-    padding: 0 30px;
-    border: none;
-    background-color: var(--primary-light-yellow);
-    color: #666;
+.dashboard .dashboard_boxes a {
+    display: block;
+    width: 31%;
+    min-height: 100px;
+    padding: 15px;
+    text-decoration: none;
+    background-color: var(--main-background-secondary);
     border-radius: 5px;
     cursor: pointer;
+    margin-bottom: 15px;
 }
-.dashboard .selButton button:hover {
+.dashboard .dashboard_boxes a h3 {
+    margin-bottom: 8px;
+    color: var(--primary-dark-text);
+}
+.dashboard .dashboard_boxes a p {
+    color: var(--primary-dark-text);
+    opacity: 0.9;
+}
+.dashboard .dashboard_boxes a:hover {
     opacity: 0.8;
 }
-.dashboard .selButton button:active {
+.dashboard .dashboard_boxes a:active {
     opacity: 0.2;
+}
+
+@media (max-width: 700px) {
+    .dashboard .dashboard_boxes {
+        flex-wrap: wrap;
+    }
+    .dashboard .dashboard_boxes a {
+        width: 49%;
+    }
+    .dashboard .dashboard_boxes a h3 {
+        font-size: 1.1rem;
+    }
+    .dashboard .dashboard_boxes a:last-child {
+        width: 100%;
+    }
 }

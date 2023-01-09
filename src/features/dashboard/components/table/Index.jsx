@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import { CurrencyDollar, Fire } from "phosphor-react";
 
 import style from "./styles.module.css";
 
@@ -8,60 +9,41 @@ export function Table() {
     return (
         <div className={style.table}>
             <div className={style.table_container}>
-                <h3>Moedas sendo vendidas:</h3>
+                <div className={style.left}>
+                    <small>Nome</small>
 
-                <div className={style.dark_item_invisible}>
-                    <dl className={style.dark_item}>
-                        <dt>Moeda</dt>
-                    </dl>
-                    <dl className={style.dark_item}>
-                        <dt>Estado</dt>
-                    </dl>
-                    <dl className={style.dark_item}>
-                        <dt>Quantidade</dt>
-                    </dl>
-                    <dl className={style.dark_item}>
-                        <dt>Vendendo por</dt>
-                    </dl>
+                    {[1, 1, 1, 1, 11].map((v, i) => {
+                        return (
+                            <div>
+                                BNB <Fire color="tomato" weight="fill" />
+                            </div>
+                        );
+                    })}
                 </div>
 
-                {[1, 2, 3, 4, 5].map((item) => {
-                    return (
-                        <div>
-                            <dl
-                                className={style.litgh_item}
-                                onClick={() => navigate("/buy_coin")}
-                                style={{ cursor: "pointer" }}
-                            >
-                                <dd>Dolar</dd>
-                            </dl>
-                            <dl
-                                style={{
-                                    color: true ? "green" : "orange",
-                                    cursor: "pointer",
-                                }}
-                                className={style.litgh_item}
-                                onClick={() => navigate("/buy_coin")}
-                            >
-                                <dd>{true ? "Disponivel" : "Vendido"}</dd>
-                            </dl>
-                            <dl
-                                className={style.litgh_item}
-                                onClick={() => navigate("/buy_coin")}
-                                style={{ cursor: "pointer" }}
-                            >
-                                <dd>1200</dd>
-                            </dl>
-                            <dl
-                                className={style.litgh_item}
-                                onClick={() => navigate("/buy_coin")}
-                                style={{ cursor: "pointer" }}
-                            >
-                                <dd>3000MT</dd>
-                            </dl>
-                        </div>
-                    );
-                })}
+                <div className={style.right}>
+                    <div className={style.small_box}>
+                        <small>Preço</small>
+                        <small>Detalhes venda</small>
+                    </div>
+
+                    {[1, 1, 1, 1, 11].map((v, i) => {
+                        return (
+                            <div className={style.right_box}>
+                                <div>
+                                    <span>244.1</span>
+                                    <span>
+                                        <CurrencyDollar size={13} />
+                                        244.10
+                                    </span>
+                                </div>
+                                <button onClick={() => navigate("/buy_coin")}>
+                                    ver mais
+                                </button>
+                            </div>
+                        );
+                    })}
+                </div>
             </div>
         </div>
     );

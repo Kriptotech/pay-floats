@@ -14,11 +14,6 @@ export function Main() {
 
                 <p>Telefone: 293494488585484</p>
                 <p>Pais: Mocambique</p>
-                <p>Cidade: Nampula</p>
-                <p>
-                    Saldo: <span style={{ color: "greenyellow" }}>0</span>
-                    {"  "}FLOATCOINS
-                </p>
             </div>
         </div>
     );

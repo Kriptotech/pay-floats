@@ -1,24 +1,27 @@
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Slide } from "../slide/Index";
 
 import { Table } from "../table/Index";
 import style from "./styles.module.css";
 
 export function DashboardContainer() {
-    // states
-    const [isSelling, setIsSelling] = useState(true);
-
-    const navigate = useNavigate();
-
     return (
         <div className={style.dashboard}>
-            {isSelling && (
-                <div className={style.selButton}>
-                    <button onClick={() => navigate("/sell_coin")}>
-                        Vender moeda
-                    </button>
-                </div>
-            )}
+            <Slide />
+
+            <div className={style.dashboard_boxes}>
+                <a href="/dashboard">
+                    <h3>Compra com USD</h3>
+                    <p>M-pesa, E-mola...</p>
+                </a>
+                <a href="/dashboard">
+                    <h3>Depositar</h3>
+                    <p>Variações de pagamento...</p>
+                </a>
+                <a href="/dashboard">
+                    <h3>Trading</h3>
+                    <p>Transferencia bancaria, M-pesa, E-mola...</p>
+                </a>
+            </div>
 
             <Table />
         </div>

@@ -1,8 +1,9 @@
 import {
     HouseLine,
     User,
-    PlusCircle,
+    ChartBar,
     CurrencyCircleDollar,
+    Bag,
 } from "phosphor-react";
 import { useNavigate } from "react-router-dom";
 
@@ -24,22 +25,38 @@ export function BottomNavigation({ route }) {
                             ? "rgb(255, 223, 44)"
                             : "rgba(157, 109, 235, 1)"
                     }
-                    weight="fill"
+                    weight={route === "dashboard" ? "fill" : "duotone"}
                     size={30}
                 />
-                {route === "dashboard" && <span>Inicio</span>}
+                {route === "dashboard" && (
+                    <span
+                        style={{
+                            color: route === "dashboard" && "rgb(255, 223, 44)",
+                        }}
+                    >
+                        Inicio
+                    </span>
+                )}
             </button>
-            <button onClick={() => navigateToPage("deposit_money")}>
-                <PlusCircle
+            <button onClick={() => navigateToPage("market")}>
+                <ChartBar
                     color={
-                        route === "deposit_money"
+                        route === "market"
                             ? "rgb(255, 223, 44)"
                             : "rgba(157, 109, 235, 1)"
                     }
-                    weight="fill"
+                    weight={route === "market" ? "fill" : "duotone"}
                     size={35}
                 />
-                {route === "deposit_money" && <span>Depositar</span>}
+                {route === "market" && (
+                    <span
+                        style={{
+                            color: route === "market" && "rgb(255, 223, 44)",
+                        }}
+                    >
+                        Mercado
+                    </span>
+                )}
             </button>
             <button onClick={() => navigateToPage("request_money")}>
                 <CurrencyCircleDollar
@@ -48,10 +65,40 @@ export function BottomNavigation({ route }) {
                             ? "rgb(255, 223, 44)"
                             : "rgba(157, 109, 235, 1)"
                     }
-                    weight="fill"
+                    weight={route === "request_money" ? "fill" : "duotone"}
                     size={35}
                 />
-                {route === "request_money" && <span>Requisitar</span>}
+                {route === "request_money" && (
+                    <span
+                        style={{
+                            color:
+                                route === "request_money" &&
+                                "rgb(255, 223, 44)",
+                        }}
+                    >
+                        Requisitar
+                    </span>
+                )}
+            </button>
+            <button onClick={() => navigateToPage("carteiras")}>
+                <Bag
+                    color={
+                        route === "carteiras"
+                            ? "rgb(255, 223, 44)"
+                            : "rgba(157, 109, 235, 1)"
+                    }
+                    weight={route === "carteiras" ? "fill" : "duotone"}
+                    size={30}
+                />
+                {route === "carteiras" && (
+                    <span
+                        style={{
+                            color: route === "carteiras" && "rgb(255, 223, 44)",
+                        }}
+                    >
+                        Carteiras
+                    </span>
+                )}
             </button>
             <button onClick={() => navigateToPage("profile")}>
                 <User
@@ -60,10 +107,18 @@ export function BottomNavigation({ route }) {
                             ? "rgb(255, 223, 44)"
                             : "rgba(157, 109, 235, 1)"
                     }
-                    weight="fill"
+                    weight={route === "profile" ? "fill" : "duotone"}
                     size={30}
                 />
-                {route === "profile" && <span>Perfil</span>}
+                {route === "profile" && (
+                    <span
+                        style={{
+                            color: route === "profile" && "rgb(255, 223, 44)",
+                        }}
+                    >
+                        Perfil
+                    </span>
+                )}
             </button>
         </div>
     );

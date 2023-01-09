@@ -13,6 +13,8 @@ import { DepositMoney } from "../pages/DepositMoney";
 import { Termspage } from "../pages/Terms";
 import { Politicspage } from "../pages/Politics";
 import { AddCredit } from "../pages/AddCredit";
+import { Carteiras } from "../pages/Carteiras";
+import { Market } from "../pages/Market";
 
 export function Router() {
     return (
@@ -71,6 +73,22 @@ export function Router() {
                         element={
                             <PrivateRoute>
                                 <AddCredit />
+                            </PrivateRoute>
+                        }
+                    />
+                    <Route
+                        path="/carteiras"
+                        element={
+                            <PrivateRoute>
+                                <Carteiras />
+                            </PrivateRoute>
+                        }
+                    />
+                    <Route
+                        path="/market"
+                        element={
+                            <PrivateRoute>
+                                <Market />
                             </PrivateRoute>
                         }
                     />
