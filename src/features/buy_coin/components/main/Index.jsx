@@ -3,7 +3,6 @@ import { useLocation } from "react-router-dom";
 
 import style from "./styles.module.css";
 import { PaymentModal } from "../PaymentModal/Index";
-import { Header } from "../../../../components/header/Index";
 
 export function Main() {
     // states

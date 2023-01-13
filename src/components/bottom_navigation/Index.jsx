@@ -22,7 +22,7 @@ export function BottomNavigation({ route }) {
                 <HouseLine
                     color={
                         route === "dashboard"
-                            ? "rgb(255, 223, 44)"
+                            ? "rgb(84, 170, 195)"
                             : "rgba(157, 109, 235, 1)"
                     }
                     weight={route === "dashboard" ? "fill" : "duotone"}
@@ -31,7 +31,7 @@ export function BottomNavigation({ route }) {
                 {route === "dashboard" && (
                     <span
                         style={{
-                            color: route === "dashboard" && "rgb(255, 223, 44)",
+                            color: route === "dashboard" && "rgb(84, 170, 195)",
                         }}
                     >
                         Inicio
@@ -42,7 +42,7 @@ export function BottomNavigation({ route }) {
                 <ChartBar
                     color={
                         route === "market"
-                            ? "rgb(255, 223, 44)"
+                            ? "rgb(84, 170, 195)"
                             : "rgba(157, 109, 235, 1)"
                     }
                     weight={route === "market" ? "fill" : "duotone"}
@@ -51,7 +51,7 @@ export function BottomNavigation({ route }) {
                 {route === "market" && (
                     <span
                         style={{
-                            color: route === "market" && "rgb(255, 223, 44)",
+                            color: route === "market" && "rgb(84, 170, 195)",
                         }}
                     >
                         Mercado
@@ -62,7 +62,7 @@ export function BottomNavigation({ route }) {
                 <CurrencyCircleDollar
                     color={
                         route === "request_money"
-                            ? "rgb(255, 223, 44)"
+                            ? "rgb(84, 170, 195)"
                             : "rgba(157, 109, 235, 1)"
                     }
                     weight={route === "request_money" ? "fill" : "duotone"}
@@ -73,7 +73,7 @@ export function BottomNavigation({ route }) {
                         style={{
                             color:
                                 route === "request_money" &&
-                                "rgb(255, 223, 44)",
+                                "rgb(84, 170, 195)",
                         }}
                     >
                         Requisitar
@@ -84,7 +84,7 @@ export function BottomNavigation({ route }) {
                 <Bag
                     color={
                         route === "carteiras"
-                            ? "rgb(255, 223, 44)"
+                            ? "rgb(84, 170, 195)"
                             : "rgba(157, 109, 235, 1)"
                     }
                     weight={route === "carteiras" ? "fill" : "duotone"}
@@ -93,7 +93,7 @@ export function BottomNavigation({ route }) {
                 {route === "carteiras" && (
                     <span
                         style={{
-                            color: route === "carteiras" && "rgb(255, 223, 44)",
+                            color: route === "carteiras" && "rgb(84, 170, 195)",
                         }}
                     >
                         Carteiras
@@ -104,7 +104,7 @@ export function BottomNavigation({ route }) {
                 <User
                     color={
                         route === "profile"
-                            ? "rgb(255, 223, 44)"
+                            ? "rgb(84, 170, 195)"
                             : "rgba(157, 109, 235, 1)"
                     }
                     weight={route === "profile" ? "fill" : "duotone"}
@@ -113,7 +113,7 @@ export function BottomNavigation({ route }) {
                 {route === "profile" && (
                     <span
                         style={{
-                            color: route === "profile" && "rgb(255, 223, 44)",
+                            color: route === "profile" && "rgb(84, 170, 195)",
                         }}
                     >
                         Perfil

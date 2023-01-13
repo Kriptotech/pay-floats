@@ -1,12 +1,15 @@
 import { useState } from "react";
 import style from "./styles.module.css";
+import { PaymentModal } from "../PaymentModal/Index";
 
 export function Main() {
     // states
     const [message, setMessage] = useState("");
+    const [isModalVisible, setIsModalVisible] = useState(false);
 
     async function submitForm(e) {
         e.preventDefault();
+        setIsModalVisible(true);
         setMessage("");
     }
 
@@ -26,6 +29,7 @@ export function Main() {
                     </p>
 
                     <div>
+                        <p>Deseja vender:</p>
                         <select required>
                             <option value={1}>Dolar</option>
                         </select>
@@ -36,9 +40,7 @@ export function Main() {
                             type="number"
                         />
 
-                        <select required>
-                            <option value={1}>Metical</option>
-                        </select>
+                        <p>Por quanto deseja vender:</p>
 
                         <input
                             required
@@ -51,6 +53,9 @@ export function Main() {
                     <button>VENDER</button>
                 </form>
             </div>
+            {isModalVisible && (
+                <PaymentModal close={() => setIsModalVisible(false)} />
+            )}
         </div>
     );
 }

@@ -6,16 +6,55 @@ import style from "./styles.module.css";
 export function Table() {
     const navigate = useNavigate();
 
+    const list = [
+        {
+            name: "Ecobank",
+            path: "/images/carteiras/ecobank.jpg",
+        },
+        {
+            name: "Accesbank",
+            path: "/images/carteiras/acces-bank.png",
+        },
+        {
+            name: "Emola",
+            path: "/images/carteiras/emola.png",
+        },
+        {
+            name: "Letshego",
+            path: "/images/carteiras/letshego.png",
+        },
+        {
+            name: "Mpesa",
+            path: "/images/carteiras/mpesa.png",
+        },
+        {
+            name: "Needbank",
+            path: "/images/carteiras/needbank.png",
+        },
+        {
+            name: "Paypal",
+            path: "/images/carteiras/paypal.png",
+        },
+        {
+            name: "Ponto24",
+            path: "/images/carteiras/ponto24.png",
+        },
+        {
+            name: "Rand",
+            path: "/images/carteiras/rand.png",
+        },
+    ];
+
     return (
         <div className={style.table}>
             <div className={style.table_container}>
                 <div className={style.left}>
                     <small>Nome</small>
-
-                    {[1, 1, 1, 1, 11].map((v, i) => {
+                    {list.map((v) => {
                         return (
                             <div>
-                                BNB <Fire color="tomato" weight="fill" />
+                                <img src={v.path} alt="" />
+                                {v.name}
                             </div>
                         );
                     })}
@@ -27,7 +66,7 @@ export function Table() {
                         <small>Detalhes venda</small>
                     </div>
 
-                    {[1, 1, 1, 1, 11].map((v, i) => {
+                    {list.map((v) => {
                         return (
                             <div className={style.right_box}>
                                 <div>

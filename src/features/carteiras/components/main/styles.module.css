@@ -84,6 +84,12 @@
 .main .box .box_column .box_column_item .box_column_item_left div span {
     color: #333;
 }
+.main .box .box_column .box_column_item .box_column_item_left img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 4px;
+}
 
 .main .box .box_column .box_column_item .box_column_item_right div {
     display: flex;

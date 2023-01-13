@@ -1,12 +1,15 @@
 import { useState } from "react";
 import style from "./styles.module.css";
+import { PaymentModal } from "../PaymentModal/Index";
 
 export function Main() {
     // states
     const [message, setMessage] = useState("");
+    const [isModalVisible, setIsModalVisible] = useState(false);
 
     async function submitForm(e) {
         e.preventDefault();
+        setIsModalVisible(true);
         setMessage("");
     }
 
@@ -46,6 +49,9 @@ export function Main() {
                     <button>PROSSEGUIR</button>
                 </form>
             </div>
+            {isModalVisible && (
+                <PaymentModal close={() => setIsModalVisible(false)} />
+            )}
         </div>
     );
 }

@@ -29,6 +29,12 @@
     margin-bottom: 20px;
     color: #555;
 }
+.table .table_container .left div img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 4px;
+}
 
 .table .table_container .right .small_box {
     display: flex;

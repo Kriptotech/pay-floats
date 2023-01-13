@@ -10,8 +10,10 @@
     --white: rgb(255, 255, 255);
     --outline: rgba(178, 182, 187, 0.15);
 
-    --primary-yellow: rgb(240, 185, 11);
-    --primary-light-yellow: rgb(255, 223, 44);
+    /* --primary-yellow: rgb(240, 185, 11); */
+    /* --primary-light-yellow: rgb(255, 223, 44); */
+    --primary-yellow: rgb(84, 170, 195);
+    --primary-light-yellow: rgb(84, 170, 195);
     --primary-light-text: rgb(30, 35, 41);
     --primary-lighter-text: rgb(30, 35, 41);
     --primary-dark-text: rgb(30, 35, 41);
