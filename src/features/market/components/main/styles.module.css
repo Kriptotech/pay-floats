@@ -4,3 +4,22 @@
     padding-bottom: 100px;
     z-index: 1;
 }
+
+.market .market_options_container {
+    padding: 0 5%;
+    padding-top: 30px;
+}
+.market .market_options_container .market_options {
+    width: min(500px, 100%);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+.market .market_options_container .market_options button {
+    font-size: 0.9rem;
+    color: #555;
+    padding: 4px;
+    cursor: pointer;
+    border-radius: 4px;
+}

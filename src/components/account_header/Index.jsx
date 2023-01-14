@@ -6,6 +6,7 @@ import {
     HouseLine,
     CurrencyCircleDollar,
     CurrencyDollar,
+    ChartBar,
 } from "phosphor-react";
 import { useState } from "react";
 
@@ -46,6 +47,10 @@ export function AccountHeader() {
                                 <CurrencyDollar />
                                 Adicionar saldo
                             </a>
+                            <a href="/market">
+                                <ChartBar />
+                                Mercado
+                            </a>
                             <a href="/carteiras">
                                 <CurrencyDollar />
                                 Carteiras
@@ -53,6 +58,14 @@ export function AccountHeader() {
                             <a href="/deposit_money">
                                 <CurrencyDollar />
                                 Depositar dinheiro
+                            </a>
+                            <a href="/transfer_money">
+                                <CurrencyDollar />
+                                Transferir dinheiro
+                            </a>
+                            <a href="/levantar">
+                                <CurrencyDollar />
+                                Levantar dinheiro
                             </a>
                             <a href="/request_money">
                                 <CurrencyCircleDollar />

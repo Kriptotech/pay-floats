@@ -99,3 +99,9 @@
 .main .box .box_column .box_column_item .box_column_item_right div span {
     color: #333;
 }
+
+@media (max-width: 400px) {
+    .main .box .box_row button {
+        width: 100%;
+    }
+}

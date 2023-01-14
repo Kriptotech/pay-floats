@@ -8,8 +8,8 @@ export function Main() {
     const [isModalVisible, setIsModalVisible] = useState(false);
     const [selectedFrom, setSelectedFrom] = useState(true);
     const [selectedFromImage, setSelectedFromImage] = useState({
-        name: "Ecobank",
-        path: "/images/carteiras/ecobank.jpg",
+        name: "Mpesa",
+        path: "/images/carteiras/mpesa.png",
     });
 
     async function submitForm(e) {
@@ -20,66 +20,31 @@ export function Main() {
 
     const list = [
         {
-            name: "Ecobank",
-            path: "/images/carteiras/ecobank.jpg",
-        },
-        {
-            name: "Accesbank",
-            path: "/images/carteiras/acces-bank.png",
-        },
-        {
-            name: "Emola",
-            path: "/images/carteiras/emola.png",
-        },
-        {
-            name: "Letshego",
-            path: "/images/carteiras/letshego.png",
-        },
-        {
             name: "Mpesa",
             path: "/images/carteiras/mpesa.png",
-        },
-        {
-            name: "Needbank",
-            path: "/images/carteiras/needbank.png",
-        },
-        {
-            name: "Paypal",
-            path: "/images/carteiras/paypal.png",
-        },
-        {
-            name: "Ponto24",
-            path: "/images/carteiras/ponto24.png",
-        },
-        {
-            name: "Rand",
-            path: "/images/carteiras/rand.png",
         },
     ];
 
     return (
         <div className={style.deposit_money}>
             <div className={style.deposit_money_header}>
-                <img src="/images/person-paying.jpg" alt="" />
-                <h1>Depositar dinheiro</h1>
+                <img src="/images/person-paying.webp" alt="" />
+                <h1>Levantar dinheiro</h1>
             </div>
 
             <div className={style.deposit_money_row_container}>
                 <form onSubmit={(e) => submitForm(e)}>
-                    <h4>
-                        deposite dinheiro para uma conta de banco ou carteira
-                        movel
-                    </h4>
+                    <h4>levante dinheiro para Mpesa</h4>
                     <p>
-                        Preencha os campos abaixo para depositar dinheiro, caso
+                        Preencha os campos abaixo para levantar dinheiro, caso
                         tenha cometido um erro, contacte o administrador para
                         corrigi-lo.
                     </p>
 
                     <div>
                         <p>
-                            <img src={selectedFromImage.path} alt="" />{" "}
-                            Depositar no:
+                            <img src={selectedFromImage.path} alt="" /> Levantar
+                            no:
                         </p>
 
                         <select
@@ -104,14 +69,14 @@ export function Main() {
                         </select>
                         <input
                             required
-                            placeholder="Telefone (+258) ou ID"
+                            placeholder="Telefone (+258) "
                             type="text"
                         />
                         <input required placeholder="Quantidade" type="text" />
                     </div>
                     <br />
                     <p style={{ color: "violet" }}>{message}</p>
-                    <button>DEPOSITAR</button>
+                    <button>LEVANTAR</button>
                 </form>
             </div>
 

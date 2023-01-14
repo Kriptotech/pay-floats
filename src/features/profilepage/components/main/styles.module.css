@@ -19,6 +19,11 @@
     left: 30px;
     border: 4px solid white;
 }
+.main .profile_banner svg {
+    position: absolute;
+    bottom: -45px;
+    left: 100px;
+}
 
 .main .profile_content {
     color: #666;

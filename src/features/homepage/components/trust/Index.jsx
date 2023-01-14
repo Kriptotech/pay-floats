@@ -11,22 +11,19 @@ export function Trust() {
 
                     <ul>
                         <li>
-                            <h2>Pacotes & Valor</h2>
+                            <h2>Gratis e acessivel</h2>
                             <p>
-                                Pacote mínimo de 20mt (vinte meticais), comece a
-                                investir com investimentos mínimos no valor
-                                certo que confere ao teu bolso. Uma plataforma
-                                de fácil acesso e simples de usar.
+                                Desfrute de todos os serviços da plataforma
+                                PayFloat de graça, tudo ao seu dispor para ti.
                             </p>
                         </li>
 
                         <li>
-                            <h2>Investir & Bónus</h2>
+                            <h2>Torene-se um vendedor</h2>
                             <p>
-                                Na Floatter os Investidores não precisam
-                                trabalhar para obter os ganhos passivos os
-                                bónus, desde que tenha o pacote activo e começa
-                                a ganha os seus lucros diários.
+                                Torne-se um vendedor dentro da plataforma e
+                                venda moedas personalizando o valor que tu
+                                queres vender.
                             </p>
                         </li>
                     </ul>

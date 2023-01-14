@@ -5,34 +5,33 @@ export function Numbers() {
         <div className={style.numbers}>
             <div className={style.numbers_box}>
                 <div className={style.numbers_content}>
-                    <h1>Investir bem, é investir para um futuro melhor</h1>
+                    <h1>Poupe tempo, faça transferencias na PayFloat.</h1>
                     <p>
                         Nossa experiência na estruturação de transações
                         financeiras complicadas, ao mesmo tempo em que acomoda
-                        diversos interesses de parceria, permitiu que ela
-                        alcançasse mmuitas aquisições e financiamentos
+                        diversos interesses de parceria, permiti-nos oferecer
+                        transferencias de confiaça para ti.
                     </p>
                 </div>
 
                 <div className={style.numbers_content}>
                     <h1>
-                        Investindo na Floatter tens “o melhor negocio para uma
-                        vida melhor”
+                        Faça transferencias rapidas em qualquer lugar a qualquer
+                        momento com a ajuda da PayFloat.
                     </h1>
                     <p>
-                        No entanto, nosso objetivo é aconselhar e oferecer
-                        soluções para todas as necessidades de serviços
-                        financeiros de nossos clientes.
+                        Nosso objetivo é ajudar-te e oferecer soluções para
+                        todas as necessidades de serviços. Transfira com
+                        facilidade para varias carteiras moveis ou Bancos.
                     </p>
                 </div>
 
                 <div className={style.numbers_content}>
-                    <h1>Gerenciamentos Optimizados</h1>
+                    <h1>As suas carteiras</h1>
                     <p>
-                        Oferecemos um gerenciamento abrangente de portfólio,
-                        montamos uma carteira ideal para si, junto a outras
-                        contas de investimento e gerenciamos um portfólio
-                        projectado para atender às suas necessidades.
+                        Oferecemos um sistema que grarante que faças
+                        transferencias para Mpesa, Emola, Paypal, Ponto24,
+                        EcoBank, AccesBank e muito mais.
                     </p>
                 </div>
             </div>

@@ -58,20 +58,20 @@ export function Main() {
     ];
 
     return (
-        <div className={style.deposit_money}>
-            <div className={style.deposit_money_header}>
-                <img src="/images/person-paying.jpg" alt="" />
-                <h1>Depositar dinheiro</h1>
+        <div className={style.transfer_money}>
+            <div className={style.transfer_money_header}>
+                <img src="/images/person-paying.webp" alt="" />
+                <h1>Transferir dinheiro</h1>
             </div>
 
-            <div className={style.deposit_money_row_container}>
+            <div className={style.transfer_money_row_container}>
                 <form onSubmit={(e) => submitForm(e)}>
                     <h4>
-                        deposite dinheiro para uma conta de banco ou carteira
+                        transfira dinheiro para uma conta de banco ou carteira
                         movel
                     </h4>
                     <p>
-                        Preencha os campos abaixo para depositar dinheiro, caso
+                        Preencha os campos abaixo para transferir dinheiro, caso
                         tenha cometido um erro, contacte o administrador para
                         corrigi-lo.
                     </p>
@@ -79,7 +79,7 @@ export function Main() {
                     <div>
                         <p>
                             <img src={selectedFromImage.path} alt="" />{" "}
-                            Depositar no:
+                            Transferir para:
                         </p>
 
                         <select
@@ -111,7 +111,7 @@ export function Main() {
                     </div>
                     <br />
                     <p style={{ color: "violet" }}>{message}</p>
-                    <button>DEPOSITAR</button>
+                    <button>TRANSFERIR</button>
                 </form>
             </div>
 

@@ -6,8 +6,17 @@ export function Main() {
     // states
     const [message, setMessage] = useState("");
     const [isModalVisible, setIsModalVisible] = useState(false);
-    const [selectedFrom, setSelectedFrom] = useState(false);
-    const [selectedTo, setSelectedTo] = useState(false);
+    const [selectedFrom, setSelectedFrom] = useState(true);
+    const [selectedTo, setSelectedTo] = useState(true);
+
+    const [selectedFromImage, setSelectedFromImage] = useState({
+        name: "Ecobank",
+        path: "/images/carteiras/ecobank.jpg",
+    });
+    const [selectedToImage, setSelectedToImage] = useState({
+        name: "Ecobank",
+        path: "/images/carteiras/ecobank.jpg",
+    });
 
     async function submitForm(e) {
         e.preventDefault();
@@ -57,6 +66,7 @@ export function Main() {
     return (
         <div className={style.request_money}>
             <div className={style.request_money_header}>
+                <img src="/images/person-paying.webp" alt="" />
                 <h1>Requisitar dinheiro de uma carteira para outra</h1>
             </div>
 
@@ -70,17 +80,26 @@ export function Main() {
                     </p>
 
                     <div>
-                        <input required placeholder="Motante" type="number" />
-                        <p>De:</p>
+                        <br />
+                        <p>
+                            <img src={selectedFromImage.path} alt="" />
+                            De: {selectedFromImage.name}
+                        </p>
                         <select
                             required
-                            onChange={() => {
+                            onChange={(e) => {
                                 setSelectedFrom(true);
+                                setSelectedFromImage(
+                                    JSON.parse(e.target.value)
+                                );
                             }}
                         >
                             {list.map((v) => {
                                 return (
-                                    <option value={v.name} key={v.name}>
+                                    <option
+                                        value={JSON.stringify(v)}
+                                        key={v.name}
+                                    >
                                         {v.name}
                                     </option>
                                 );
@@ -94,11 +113,23 @@ export function Main() {
                             />
                         )}
 
-                        <p>Para:</p>
-                        <select required onChange={() => setSelectedTo(true)}>
+                        <p>
+                            <img src={selectedToImage.path} alt="" /> Para:{" "}
+                            {selectedToImage.name}
+                        </p>
+                        <select
+                            required
+                            onChange={(e) => {
+                                setSelectedTo(true);
+                                setSelectedToImage(JSON.parse(e.target.value));
+                            }}
+                        >
                             {list.map((v) => {
                                 return (
-                                    <option value={v.name} key={v.name}>
+                                    <option
+                                        value={JSON.stringify(v)}
+                                        key={v.name}
+                                    >
                                         {v.name}
                                     </option>
                                 );
@@ -111,6 +142,8 @@ export function Main() {
                                 type="text"
                             />
                         )}
+
+                        <input required placeholder="Motante" type="number" />
                     </div>
                     <br />
                     <p style={{ color: "violet" }}>{message}</p>

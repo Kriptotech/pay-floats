@@ -1,7 +1,8 @@
 import { Slide } from "../slide/Index";
 
-import { Table } from "../table/Index";
+import { Table } from "../main_table/Index";
 import style from "./styles.module.css";
+import { Cambio } from "../cambio/Index";
 
 export function DashboardContainer() {
     return (
@@ -22,8 +23,22 @@ export function DashboardContainer() {
                     <p>Transferencia bancaria, M-pesa, E-mola...</p>
                 </a>
             </div>
+            <br />
 
             <Table />
+            <br />
+            <br />
+            <strong
+                style={{
+                    paddingLeft: "5%",
+                    paddingRight: "5%",
+                    marginBlock: 20,
+                    display: "block",
+                }}
+            >
+                Taxa de cambio:
+            </strong>
+            <Cambio />
         </div>
     );
 }

@@ -9,70 +9,47 @@ export function CreatePortfolio() {
                 <div className={style.create_portfolio_left}>
                     <h1>O que Oferecemos</h1>
                     <p>
-                        Alto grau de sofisticação de seus investimentos, acesso
-                        a fundos exclusivos e resiliência necessária frente a
-                        volatilidade do mercado. Algoritmo que monitora até
-                        13.000 combinações possíveis, para montar a carteira
-                        personalizada para você.
+                        A nossa plataforma oferece soluções tecnologicas para
+                        tornar a tua vida mais facil. Alto grau de sofisticação
+                        nas suas transferencias, faça parte de uma comunidade no
+                        nosso mercado, e muito mais.
                     </p>
 
                     <ul>
                         <li>
-                            <h2>Liberdade Financeira</h2>
+                            <h2>Mercado de moedas ao seu dispor</h2>
                             <p>
-                                Uma carteira diversificada tem chances maiores e
-                                mais probabilidade de alcançar objetivos.
+                                O nosso mercado de moedas é uma das
+                                funcionalidades que irás desfrutar como usuario
+                                da plataforma.
                             </p>
                         </li>
 
                         <li>
-                            <h2>Consultoria de Negocios</h2>
+                            <h2>Trannsferencia de dinheiro</h2>
                             <p>
-                                Alto grau de sofisticação de seus investimentos,
-                                acesso a fundos exclusivos e resiliência
-                                necessária frente a volatilidade do mercado.
+                                Transfira dinheiro de forma facil para contas
+                                moveis ou bancarias com a simplicidade e
+                                facilidade da PayFloat
                             </p>
                         </li>
 
                         <li>
-                            <h2>Negocio Flexivel e Seguro</h2>
+                            <h2>Adicione Carteiras</h2>
                             <p>
-                                A Floatter cuida dos seus investimentos e seus
-                                negócios, multiplicando os seus ganhos ate 3X do
-                                valor investido.
+                                Adicione carteiras moveis ou bancarias e
+                                gerrencie elas usando a nossa plataforma.
                             </p>
                         </li>
 
-                        <li>
-                            <h2>Administração de Investimentos</h2>
-                            <p>
-                                Monitoramos o mercado, fazemos o rebalanceamento
-                                periódico da sua carteira e você acompanha tudo
-                                pela plataforma, enquanto faz o que ninguém pode
-                                fazer por você: aproveitar a vida.
-                            </p>
-                        </li>
                         <li>
                             <h2>
-                                Tecnologia de Ponta e Especialistas de Mercado
+                                Requisite dinheiro de uma carteira para outra
                             </h2>
                             <p>
-                                Nosso algoritmo faz cálculos humanamente
-                                impossíveis para otimizar sua carteira. As
-                                análises de mercado, feitas pelos nossos
-                                especialistas, completam este dueto virtuoso. O
-                                app é intuitivo e prático, você acompanha tudo
-                                em tempo real.
-                            </p>
-                        </li>
-                        <li>
-                            <h2>Melhor Modelo de Negócio</h2>
-                            <p>
-                                Taxa única e transparente para fazer a gestão da
-                                sua carteira e buscar ótimos retornos. Sem
-                                conflito de interesses, devolução de 300% do
-                                valor investido e com o melhor custo benefício
-                                em 540 dias, no total de 18 Meses.
+                                Com a maior simplicidade, apenas diga de onde e
+                                para onde quer que o sue dinheior vá, e nós
+                                trataremos do resto.
                             </p>
                         </li>
                     </ul>

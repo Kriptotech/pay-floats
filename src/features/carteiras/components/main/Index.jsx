@@ -61,6 +61,12 @@ export function Main() {
                         <button onClick={() => navigate("/market")}>
                             Comprar
                         </button>
+                        <button onClick={() => navigate("/transfer_money")}>
+                            Transferir
+                        </button>
+                        <button onClick={() => navigate("/levantar")}>
+                            Levantar
+                        </button>
                         <button onClick={() => navigate("/deposit_money")}>
                             Depósito
                         </button>

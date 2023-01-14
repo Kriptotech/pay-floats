@@ -1,0 +1,71 @@
+.table {
+    z-index: 1;
+    padding: 0 5%;
+    margin-top: 30px;
+}
+
+.table .table_container {
+    width: min(500px, 100%);
+    display: flex;
+    background-color: var(--main-background-secondary);
+    padding: 15px;
+}
+.table .table_container .left {
+    width: 50%;
+}
+.table .table_container .right {
+    width: 50%;
+}
+
+.table .table_container .left small {
+    display: block;
+    color: rgb(121, 120, 118);
+    margin-bottom: 15px;
+}
+.table .table_container .left div {
+    display: flex;
+    align-items: center;
+    min-height: 33px;
+    margin-bottom: 20px;
+    color: #555;
+}
+.table .table_container .left div img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 4px;
+}
+
+.table .table_container .right .small_box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.table .table_container .right small {
+    display: block;
+    color: rgb(121, 120, 118);
+}
+.table .table_container .right .right_box {
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.table .table_container .right .right_box div {
+    display: flex;
+    flex-direction: column;
+}
+.table .table_container .right .right_box div span:last-child {
+    font-size: 0.8rem;
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+}
+.table .table_container .right .right_box button {
+    background-color: rgb(14, 207, 143);
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    color: #eeeeeeee;
+    cursor: pointer;
+}

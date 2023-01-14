@@ -1,16 +1,16 @@
-.deposit_money {
+.transfer_money {
     padding-top: 100px;
     padding-bottom: 100px;
     min-height: 100vh;
 }
 
-.deposit_money .deposit_money_header {
+.transfer_money .transfer_money_header {
     padding: 0 10%;
 }
-.deposit_money .deposit_money_header h1 {
+.transfer_money .transfer_money_header h1 {
     opacity: 0.8;
 }
-.deposit_money .deposit_money_header img {
+.transfer_money .transfer_money_header img {
     width: 100%;
     height: 200px;
     border-radius: 5px;
@@ -18,20 +18,20 @@
     margin-bottom: 30px;
 }
 
-.deposit_money .deposit_money_row_container {
+.transfer_money .transfer_money_row_container {
     width: 100%;
     padding: 0 10%;
     margin-top: 30px;
     display: flex;
     justify-content: space-between;
 }
-.deposit_money .deposit_money_row_container .deposit_money_card {
+.transfer_money .transfer_money_row_container .transfer_money_card {
     width: 38%;
 }
-.deposit_money
-    .deposit_money_row_container
-    .deposit_money_card
-    .deposit_money_card_box {
+.transfer_money
+    .transfer_money_row_container
+    .transfer_money_card
+    .transfer_money_card_box {
     width: 100%;
     background: var(--white);
     border-radius: 5px;
@@ -42,14 +42,14 @@
     justify-content: center;
     flex-direction: column;
 }
-.deposit_money .deposit_money_row_container .deposit_money_card img {
+.transfer_money .transfer_money_row_container .transfer_money_card img {
     width: 60px;
     height: 60px;
     border-radius: 50%;
     margin: 0 15px;
     flex-shrink: 0;
 }
-.deposit_money .deposit_money_row_container .deposit_money_card span {
+.transfer_money .transfer_money_row_container .transfer_money_card span {
     color: var(--primary-dark-text);
     font-weight: 600;
     font-size: 1.3rem;
@@ -57,23 +57,23 @@
     opacity: 0.8;
     padding: 0 15px;
 }
-.deposit_money .deposit_money_row_container .deposit_money_card p {
+.transfer_money .transfer_money_row_container .transfer_money_card p {
     color: var(--primary-dark-text);
     font-size: 0.9rem;
     margin-top: 10px;
     padding: 0 15px;
 }
-.deposit_money
-    .deposit_money_row_container
-    .deposit_money_card
-    .deposit_money_card_box
+.transfer_money
+    .transfer_money_row_container
+    .transfer_money_card
+    .transfer_money_card_box
     div {
     margin-top: 30px;
     height: 60px;
     width: 100%;
 }
 
-.deposit_money .deposit_money_row_container form {
+.transfer_money .transfer_money_row_container form {
     width: 60%;
     background: var(--white);
     border-radius: 5px;
@@ -81,18 +81,18 @@
     padding: 30px 0px;
     color: var(--primary-dark-text);
 }
-.deposit_money .deposit_money_row_container form h4 {
+.transfer_money .transfer_money_row_container form h4 {
     opacity: 0.8;
     margin-bottom: 5px;
     padding: 0 15px;
 }
-.deposit_money .deposit_money_row_container form p {
+.transfer_money .transfer_money_row_container form p {
     padding: 0 15px;
     opacity: 0.8;
     font-size: 0.8rem;
     padding-bottom: 25px;
 }
-.deposit_money .deposit_money_row_container form div {
+.transfer_money .transfer_money_row_container form div {
     padding: 0 15px;
     padding-bottom: 5px;
     margin-top: 30px;
@@ -100,15 +100,15 @@
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.deposit_money .deposit_money_row_container form div img {
+.transfer_money .transfer_money_row_container form div img {
     width: 20px;
     height: 20px;
     border-radius: 5px;
     margin-right: 10px;
     transform: translateY(6px);
 }
-.deposit_money .deposit_money_row_container form div input,
-.deposit_money .deposit_money_row_container form div select {
+.transfer_money .transfer_money_row_container form div input,
+.transfer_money .transfer_money_row_container form div select {
     width: 100%;
     height: 50px;
     margin-bottom: 20px;
@@ -118,15 +118,15 @@
     color: var(--primary-dark-text);
     padding: 0 10px;
 }
-.deposit_money .deposit_money_row_container form div input::placeholder,
-.deposit_money .deposit_money_row_container form div select::placeholder {
+.transfer_money .transfer_money_row_container form div input::placeholder,
+.transfer_money .transfer_money_row_container form div select::placeholder {
     color: var(--primary-dark-text);
     opacity: 0.8;
 }
-.deposit_money .deposit_money_row_container form div input:focus {
+.transfer_money .transfer_money_row_container form div input:focus {
     border: 1px solid var(--violet-hover);
 }
-.deposit_money .deposit_money_row_container form button {
+.transfer_money .transfer_money_row_container form button {
     margin-top: 20px;
     border: none;
     border-radius: 5px;
@@ -137,17 +137,17 @@
     margin-right: 15px;
     cursor: pointer;
 }
-.deposit_money .deposit_money_row_container form button:hover {
+.transfer_money .transfer_money_row_container form button:hover {
     opacity: 0.8;
 }
-.deposit_money .deposit_money_row_container form button:active {
+.transfer_money .transfer_money_row_container form button:active {
     background: none;
 }
 
-.deposit_money
-    .deposit_money_row_container
-    .deposit_money_row_box
-    .deposit_money_row {
+.transfer_money
+    .transfer_money_row_container
+    .transfer_money_row_box
+    .transfer_money_row {
     width: 50%;
     border-radius: 5px;
     padding: 0 5px;
@@ -156,10 +156,10 @@
     align-items: center;
     height: 40px;
 }
-.deposit_money
-    .deposit_money_row_container
-    .deposit_money_row_box
-    .deposit_money_row
+.transfer_money
+    .transfer_money_row_container
+    .transfer_money_row_box
+    .transfer_money_row
     input {
     flex: 1;
     background: none;
@@ -171,26 +171,26 @@
 }
 
 @media (max-width: 1200px) {
-    .deposit_money .deposit_money_header {
+    .transfer_money .transfer_money_header {
         padding: 0 2%;
     }
-    .deposit_money .deposit_money_row_container {
+    .transfer_money .transfer_money_row_container {
         padding: 0 2%;
     }
-    .deposit_money .deposit_money_row_container form {
+    .transfer_money .transfer_money_row_container form {
         width: 70%;
     }
 }
 @media (max-width: 1050px) {
-    .deposit_money .deposit_money_header {
+    .transfer_money .transfer_money_header {
         padding: 0 5%;
     }
-    .deposit_money .deposit_money_row_container form {
+    .transfer_money .transfer_money_row_container form {
         width: 90%;
     }
 }
 @media (max-width: 900px) {
-    .deposit_money .deposit_money_row_container form {
+    .transfer_money .transfer_money_row_container form {
         width: 100%;
     }
 }

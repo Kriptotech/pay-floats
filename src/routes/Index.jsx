@@ -15,6 +15,8 @@ import { Politicspage } from "../pages/Politics";
 import { AddCredit } from "../pages/AddCredit";
 import { Carteiras } from "../pages/Carteiras";
 import { Market } from "../pages/Market";
+import { Levantar } from "../pages/Levantar";
+import { TransferMoney } from "../pages/TransferMoney";
 
 export function Router() {
     return (
@@ -89,6 +91,22 @@ export function Router() {
                         element={
                             <PrivateRoute>
                                 <Market />
+                            </PrivateRoute>
+                        }
+                    />
+                    <Route
+                        path="/levantar"
+                        element={
+                            <PrivateRoute>
+                                <Levantar />
+                            </PrivateRoute>
+                        }
+                    />
+                    <Route
+                        path="/transfer_money"
+                        element={
+                            <PrivateRoute>
+                                <TransferMoney />
                             </PrivateRoute>
                         }
                     />

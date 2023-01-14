@@ -8,7 +8,10 @@ export function Hero() {
         <div className={style.hero}>
             <div className={style.hero_box}>
                 <div className={style.hero_left}>
-                    <h1>Compra, vende e guarda mais na PayFloat</h1>
+                    <h1>
+                        Compra, vende e guarda mais na PayFloat. <br />
+                        Faça transferencias com confiança!
+                    </h1>
                     <a href="/signup">
                         <User weight="fill" />
                         Registar com e-mail ou telefone

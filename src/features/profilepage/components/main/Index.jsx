@@ -1,8 +1,11 @@
-import React from "react";
-import { Plus } from "phosphor-react";
+import React, { useState } from "react";
+import { Plus, Star } from "phosphor-react";
 import style from "./styles.module.css";
+import { PaymentModal } from "../PaymentModal/Index";
 
 export function Main() {
+    const [isModalVisible, setIsModalVisible] = useState(false);
+
     const list = [
         {
             name: "Ecobank",
@@ -42,10 +45,15 @@ export function Main() {
         },
     ];
 
+    async function addCateira() {
+        setIsModalVisible(true);
+    }
+
     return (
         <div className={style.main}>
             <div className={style.profile_banner}>
                 <img src="/profile.png" alt="" />
+                <Star weight="fill" size={20} color="rgb(84, 170, 195)" />
             </div>
 
             <div className={style.profile_content}>
@@ -58,9 +66,9 @@ export function Main() {
 
             <div className={style.x_box}>
                 <div className={style.profile_add_carteira}>
-                    <button>
+                    <button onClick={() => addCateira()}>
                         <span>Adicionar carteira</span>
-                        <Plus weight="fill" />
+                        <Plus weight="fill" color="white" />
                     </button>
                 </div>
 
@@ -91,6 +99,9 @@ export function Main() {
                     </div>
                 </div>
             </div>
+            {isModalVisible && (
+                <PaymentModal close={() => setIsModalVisible(false)} />
+            )}
         </div>
     );
 }

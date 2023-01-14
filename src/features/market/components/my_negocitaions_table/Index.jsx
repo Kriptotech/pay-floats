@@ -3,7 +3,7 @@ import { CurrencyDollar, Fire } from "phosphor-react";
 
 import style from "./styles.module.css";
 
-export function Table() {
+export function MyNegociationTable() {
     const navigate = useNavigate();
 
     const list = [
@@ -12,72 +12,12 @@ export function Table() {
             path: "/images/carteiras/ecobank.jpg",
         },
         {
-            name: "Accesbank",
-            path: "/images/carteiras/acces-bank.png",
-        },
-        {
-            name: "Emola",
-            path: "/images/carteiras/emola.png",
-        },
-        {
-            name: "Letshego",
-            path: "/images/carteiras/letshego.png",
-        },
-        {
-            name: "Mpesa",
-            path: "/images/carteiras/mpesa.png",
-        },
-        {
             name: "Needbank",
             path: "/images/carteiras/needbank.png",
         },
         {
             name: "Paypal",
             path: "/images/carteiras/paypal.png",
-        },
-        {
-            name: "Ponto24",
-            path: "/images/carteiras/ponto24.png",
-        },
-        {
-            name: "Rand",
-            path: "/images/carteiras/rand.png",
-        },
-        {
-            name: "Ecobank",
-            path: "/images/carteiras/ecobank.jpg",
-        },
-        {
-            name: "Accesbank",
-            path: "/images/carteiras/acces-bank.png",
-        },
-        {
-            name: "Emola",
-            path: "/images/carteiras/emola.png",
-        },
-        {
-            name: "Letshego",
-            path: "/images/carteiras/letshego.png",
-        },
-        {
-            name: "Mpesa",
-            path: "/images/carteiras/mpesa.png",
-        },
-        {
-            name: "Needbank",
-            path: "/images/carteiras/needbank.png",
-        },
-        {
-            name: "Paypal",
-            path: "/images/carteiras/paypal.png",
-        },
-        {
-            name: "Ponto24",
-            path: "/images/carteiras/ponto24.png",
-        },
-        {
-            name: "Rand",
-            path: "/images/carteiras/rand.png",
         },
     ];
 

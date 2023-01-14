@@ -5,11 +5,17 @@
 }
 
 .request_money .request_money_header {
-    display: flex;
     padding: 0 10%;
 }
 .request_money .request_money_header h1 {
     opacity: 0.8;
+}
+.request_money .request_money_header img {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    object-fit: cover;
+    margin-bottom: 30px;
 }
 
 .request_money .request_money_row_container {
@@ -93,6 +99,14 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    flex-direction: column;
+}
+.request_money .request_money_row_container form div img {
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+    transform: translateY(6px);
 }
 .request_money .request_money_row_container form div input,
 .request_money .request_money_row_container form div select {

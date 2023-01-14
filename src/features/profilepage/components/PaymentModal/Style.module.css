@@ -1,0 +1,96 @@
+.Menu_Modal {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5%;
+}
+.Menu_Modal .Menu_Modal_box {
+    height: 70vh;
+    border-radius: 5px;
+    width: min(700px, 100%);
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.Menu_Modal .Menu_Modal_box .Menu_Modal_close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.Menu_Modal .Menu_Modal_box .Menu_Modal_close:hover {
+    opacity: 0.8;
+}
+.Menu_Modal .Menu_Modal_box .Menu_Modal_close:active {
+    opacity: 0.4;
+}
+
+.Menu_Modal .Menu_Modal_content {
+    color: #666;
+    width: 100%;
+    padding: 30px;
+}
+.Menu_Modal .Menu_Modal_content strong {
+    font-size: 0.9rem;
+}
+.Menu_Modal .Menu_Modal_content p {
+    font-size: 0.9rem;
+    margin: 10px 0;
+}
+.Menu_Modal .Menu_Modal_content .form {
+    width: 100%;
+    margin-top: 20px;
+}
+.Menu_Modal .Menu_Modal_content .form button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 50px;
+    border: none;
+    margin-bottom: 15px;
+    color: #444;
+    background-color: rgb(241, 238, 238);
+    outline: none;
+    padding: 0 10px;
+}
+.Menu_Modal .Menu_Modal_content .form input::placeholder {
+    color: #444;
+}
+.Menu_Modal .Menu_Modal_content .form p {
+    color: var(--blue-primary-dark);
+    margin-top: 30px;
+}
+.Menu_Modal .Menu_Modal_content button {
+    height: 80px;
+    width: 100%;
+    cursor: pointer;
+    border: none;
+}
+.Menu_Modal .Menu_Modal_content button:hover {
+    opacity: 0.8;
+}
+.Menu_Modal .Menu_Modal_content button:active {
+    opacity: 0.4;
+}
+.Menu_Modal .Menu_Modal_content button img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+@media (max-width: 500px) {
+    .Menu_Modal {
+        /* display: none; */
+    }
+}

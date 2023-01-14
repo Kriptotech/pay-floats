@@ -20,10 +20,10 @@ export function ExplorePossibilities() {
                     <br />
 
                     <div>
-                        <h2>Comprar Pacote</h2>
+                        <h2>Comprar moedas</h2>
                         <p>
-                            Invista em minutos, garanta uma vida toda e um
-                            futuro melhor.
+                            Em minutos, efectue o pagamento inserindo os seus
+                            dados de pagamentos.
                         </p>
                     </div>
                 </div>
@@ -32,17 +32,10 @@ export function ExplorePossibilities() {
                     <div>
                         <h2>Acompanhe tudo na palma da sua mão.</h2>
                         <p>
-                            Na Plataforma “ifloatter” você acessa{" "}
-                            <a
-                                href="http://www.ifloatter.com"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                www.ifloatter.com
-                            </a>{" "}
-                            e veja a rentabilidade da sua carteira em tempo
-                            real, além das projeções e cálculos para cada
-                            objetivo que você tiver.
+                            Na Plataforma “PayFloat” você acessa e gerencia as
+                            suas carteira moveis ou bancarias em tempo real,
+                            além das projeções e cálculos para cada objetivo que
+                            você tiver.
                         </p>
                     </div>
 
@@ -61,11 +54,11 @@ export function ExplorePossibilities() {
                     <br />
 
                     <div>
-                        <h2>300% de Valor Retornado</h2>
+                        <h2>Experiencia do usuario</h2>
                         <p>
-                            Conte com expertise de gestão e alocação de
-                            portfólio, e acompanhe sua rentabilidade pela
-                            plataforma para um retorno 100% garantido.
+                            Desfrute de uma experiencia de usuario criada para
+                            tornar tudo simples e facil, resolvendo os seus
+                            problemas.
                         </p>
                     </div>
                 </div>
