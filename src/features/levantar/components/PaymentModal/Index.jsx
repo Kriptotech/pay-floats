@@ -29,11 +29,6 @@ export const PaymentModal = ({ close }) => {
                     </p>
 
                     <form>
-                        <input
-                            required
-                            type="number"
-                            placeholder="Numero M-pesa (+285)"
-                        />
                         <button>PROSSEGUIR</button>
                     </form>
                 </div>

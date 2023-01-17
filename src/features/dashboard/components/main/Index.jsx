@@ -10,15 +10,15 @@ export function DashboardContainer() {
             <Slide />
 
             <div className={style.dashboard_boxes}>
-                <a href="/dashboard">
+                <a href="/market">
                     <h3>Compra com USD</h3>
                     <p>M-pesa, E-mola...</p>
                 </a>
-                <a href="/dashboard">
+                <a href="/deposit_money">
                     <h3>Depositar</h3>
                     <p>Variações de pagamento...</p>
                 </a>
-                <a href="/dashboard">
+                <a href="/transfer_money">
                     <h3>Trading</h3>
                     <p>Transferencia bancaria, M-pesa, E-mola...</p>
                 </a>

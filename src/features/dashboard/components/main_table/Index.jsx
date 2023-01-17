@@ -71,10 +71,7 @@ export function Table() {
                             <div className={style.right_box}>
                                 <div>
                                     <span>244.1</span>
-                                    <span>
-                                        <CurrencyDollar size={13} />
-                                        244.10
-                                    </span>
+                                    <span>01/01/2023</span>
                                 </div>
                                 <button onClick={() => navigate("/buy_coin")}>
                                     ver mais

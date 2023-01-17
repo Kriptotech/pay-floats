@@ -2,6 +2,41 @@ import { useState } from "react";
 import style from "./styles.module.css";
 import { PaymentModal } from "../PaymentModal/Index";
 
+const list = [
+    {
+        name: "Ecobank",
+        path: "/images/carteiras/ecobank.jpg",
+    },
+    {
+        name: "Accesbank",
+        path: "/images/carteiras/acces-bank.png",
+    },
+    {
+        name: "Emola",
+        path: "/images/carteiras/emola.png",
+    },
+    {
+        name: "Letshego",
+        path: "/images/carteiras/letshego.png",
+    },
+    {
+        name: "Mpesa",
+        path: "/images/carteiras/mpesa.png",
+    },
+    {
+        name: "Needbank",
+        path: "/images/carteiras/needbank.png",
+    },
+    {
+        name: "Paypal",
+        path: "/images/carteiras/paypal.png",
+    },
+    {
+        name: "Ponto24",
+        path: "/images/carteiras/ponto24.png",
+    },
+];
+
 export function Main() {
     // states
     const [message, setMessage] = useState("");
@@ -11,6 +46,9 @@ export function Main() {
         name: "Ecobank",
         path: "/images/carteiras/ecobank.jpg",
     });
+    const [requestToInput, setRequestToInput] = useState(
+        "Insira o NIB da conta bancaria Ecobank destino"
+    );
 
     async function submitForm(e) {
         e.preventDefault();
@@ -18,44 +56,38 @@ export function Main() {
         setMessage("");
     }
 
-    const list = [
-        {
-            name: "Ecobank",
-            path: "/images/carteiras/ecobank.jpg",
-        },
-        {
-            name: "Accesbank",
-            path: "/images/carteiras/acces-bank.png",
-        },
-        {
-            name: "Emola",
-            path: "/images/carteiras/emola.png",
-        },
-        {
-            name: "Letshego",
-            path: "/images/carteiras/letshego.png",
-        },
-        {
-            name: "Mpesa",
-            path: "/images/carteiras/mpesa.png",
-        },
-        {
-            name: "Needbank",
-            path: "/images/carteiras/needbank.png",
-        },
-        {
-            name: "Paypal",
-            path: "/images/carteiras/paypal.png",
-        },
-        {
-            name: "Ponto24",
-            path: "/images/carteiras/ponto24.png",
-        },
-        {
-            name: "Rand",
-            path: "/images/carteiras/rand.png",
-        },
-    ];
+    async function changeRequestToInput(data) {
+        if (data.name === "Ecobank") {
+            setRequestToInput("Insira o NIB da conta bancaria Ecobank destino");
+        }
+        if (data.name === "Accesbank") {
+            setRequestToInput(
+                "Insira o NIB da conta bancaria Accesbank destino"
+            );
+        }
+        if (data.name === "Emola") {
+            setRequestToInput("Insira o numero Emola destino");
+        }
+        if (data.name === "Letshego") {
+            setRequestToInput(
+                "Insira o NIB da conta bancaria Letshego destino"
+            );
+        }
+        if (data.name === "Mpesa") {
+            setRequestToInput("Insira o numero Mpesa destino");
+        }
+        if (data.name === "Needbank") {
+            setRequestToInput(
+                "Insira o NIB da conta bancaria Needbank destino"
+            );
+        }
+        if (data.name === "Paypal") {
+            setRequestToInput("Insira o e-mail para o Paypal destino");
+        }
+        if (data.name === "Ponto24") {
+            setRequestToInput("Insira o numero ponto24 destino");
+        }
+    }
 
     return (
         <div className={style.transfer_money}>
@@ -89,6 +121,9 @@ export function Main() {
                                 setSelectedFromImage(
                                     JSON.parse(e.target.value)
                                 );
+                                changeRequestToInput(
+                                    JSON.parse(e.target.value)
+                                );
                             }}
                         >
                             {list.map((v) => {
@@ -104,7 +139,7 @@ export function Main() {
                         </select>
                         <input
                             required
-                            placeholder="Telefone (+258) ou ID"
+                            placeholder={requestToInput}
                             type="text"
                         />
                         <input required placeholder="Quantidade" type="text" />

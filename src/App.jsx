@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { Router } from "./routes/Index";
 import { MainContext } from "./context/Index";
 import Aos from "aos";

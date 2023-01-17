@@ -69,10 +69,14 @@ export function Main() {
                         </select>
                         <input
                             required
-                            placeholder="Telefone (+258) "
-                            type="text"
+                            placeholder="Insira o numero Mpesa destino "
+                            type="number"
                         />
-                        <input required placeholder="Quantidade" type="text" />
+                        <input
+                            required
+                            placeholder="Quantidade"
+                            type="number"
+                        />
                     </div>
                     <br />
                     <p style={{ color: "violet" }}>{message}</p>
