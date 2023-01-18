@@ -19,6 +19,20 @@ export function Cambio() {
             path: "/images/paises/Flag_of_the_United_States.svg",
         },
         {
+            name: "EURO",
+            equals: "MT",
+            value: 1,
+            valueInCambio: 75,
+            path: "/images/paises/euro.png",
+        },
+        {
+            name: "LIBRA",
+            equals: "MT",
+            value: 1,
+            valueInCambio: 85,
+            path: "/images/paises/libra.png",
+        },
+        {
             name: "MT",
             equals: "USD",
             value: 1,
@@ -30,6 +44,20 @@ export function Cambio() {
             equals: "Rand",
             value: 1,
             valueInCambio: 0.0625,
+            path: "/images/paises/mozambique-national-flag.png",
+        },
+        {
+            name: "MT",
+            equals: "LIBRA",
+            value: 1,
+            valueInCambio: 0.0117,
+            path: "/images/paises/mozambique-national-flag.png",
+        },
+        {
+            name: "MT",
+            equals: "EURO",
+            value: 1,
+            valueInCambio: 0.0133,
             path: "/images/paises/mozambique-national-flag.png",
         },
     ];

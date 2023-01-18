@@ -1,0 +1,19 @@
+.WhatsappLogo_container {
+    z-index: 2;
+    position: fixed;
+    bottom: 100px;
+    right: 3vw;
+    background: rgba(84, 230, 140, 1);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    cursor: pointer;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+.WhatsappLogo_container:hover {
+    opacity: 0.8;
+}

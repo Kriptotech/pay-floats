@@ -15,6 +15,14 @@ export function LastNegociationTable() {
             name: "Rand",
             path: "/images/carteiras/rand.png",
         },
+        {
+            name: "Wester-union",
+            path: "/images/carteiras/wester-union.png",
+        },
+        {
+            name: "Bitcoin",
+            path: "/images/carteiras/bitcoin.png",
+        },
     ];
 
     return (

@@ -16,6 +16,16 @@ export function Main() {
     return (
         <div className={style.buy_coin}>
             <div className={style.buy_coin_list_container}>
+                <div className={style.description}>
+                    <span>Obs:</span>
+                    <p>
+                        <br />
+                        Receberá mensagens ou chamadas a confirmar a finalização
+                        do procedimento completo. Caso tenha alguma duvida
+                        contacte o administrador.
+                    </p>
+                </div>
+
                 <div className={style.buy_coin_list_box}>
                     <div>
                         <button onClick={() => proceedWithPayment()}>

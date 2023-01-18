@@ -36,7 +36,7 @@ export function DashboardContainer() {
                     display: "block",
                 }}
             >
-                Taxa de cambio:
+                Taxa de cambio 12/01/2023:
             </strong>
             <Cambio />
         </div>

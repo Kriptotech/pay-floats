@@ -35,6 +35,14 @@ const list = [
         name: "Ponto24",
         path: "/images/carteiras/ponto24.png",
     },
+    {
+        name: "Wester-union",
+        path: "/images/carteiras/wester-union.png",
+    },
+    {
+        name: "Bitcoin",
+        path: "/images/carteiras/bitcoin.png",
+    },
 ];
 
 export function Main() {
@@ -86,6 +94,12 @@ export function Main() {
         }
         if (data.name === "Ponto24") {
             setRequestToInput("Insira o numero ponto24 destino");
+        }
+        if (data.name === "Wester-union") {
+            setRequestToInput("Insira o seu identificador Wester-union");
+        }
+        if (data.name === "Bitcoin") {
+            setRequestToInput("Insira o seu identificador Bitcoin");
         }
     }
 

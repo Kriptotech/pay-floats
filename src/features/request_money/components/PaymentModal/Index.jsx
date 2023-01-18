@@ -20,8 +20,24 @@ export const PaymentModal = ({ close }) => {
                 </button>
 
                 <div className={Style.Menu_Modal_content}>
-                    <strong>Importante:</strong>
+                    <div className={Style.description}>
+                        <strong>Descrição:</strong>
 
+                        <div className={Style.description_row}>
+                            <p>Custo unitario</p>
+                            <span>50,00MT</span>
+                        </div>
+                        <div className={Style.description_row}>
+                            <p>Taxa de serviço</p>
+                            <span>10,00MT</span>
+                        </div>
+                        <div className={Style.description_row}>
+                            <p>Custo Total</p>
+                            <span>60,00MT</span>
+                        </div>
+                    </div>
+
+                    <strong>Importante:</strong>
                     <p>
                         Todos os dados recolhidos serão usados para efetuar o
                         pagamento, certifique-se de preencher correctamente o
@@ -29,6 +45,11 @@ export const PaymentModal = ({ close }) => {
                     </p>
 
                     <form>
+                        <input
+                            type="number"
+                            required
+                            placeholder="Numero Mpesa"
+                        />
                         <button>PROSSEGUIR</button>
                     </form>
                 </div>

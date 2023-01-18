@@ -10,6 +10,23 @@
     margin-top: 30px;
     width: 100%;
 }
+.buy_coin .buy_coin_list_container .description {
+    background-color: rgba(245, 0, 0, 0.096);
+    margin-bottom: 20px;
+    padding: 10px;
+    color: rgb(199, 0, 0);
+}
+.buy_coin .buy_coin_list_container .description p {
+    padding: 5px 0;
+}
+.buy_coin .buy_coin_list_container .description span {
+    background-color: rgb(41, 177, 211);
+    color: rgb(255, 255, 255);
+    padding: 5px 10px;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+
 .buy_coin .buy_coin_list_box {
     padding: 20px;
     margin-top: 30px;

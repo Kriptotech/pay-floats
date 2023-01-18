@@ -33,6 +33,19 @@
     margin-top: 50px;
 }
 
+.main .box .row_container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: nowrap;
+}
+.main .box .row_container .row_left {
+    width: min(450px, 100%);
+}
+.main .box .row_container .row_right {
+    flex: 1;
+    overflow: hidden;
+}
+
 .main .box .box_row {
     margin-top: 15px;
 }
@@ -98,6 +111,19 @@
 }
 .main .box .box_column .box_column_item .box_column_item_right div span {
     color: #333;
+}
+
+@media (max-width: 950px) {
+    .main .box .row_container {
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+    .main .box .row_container .row_left {
+        width: 100%;
+    }
+    .main .box .row_container .row_right {
+        width: 100%;
+    }
 }
 
 @media (max-width: 400px) {

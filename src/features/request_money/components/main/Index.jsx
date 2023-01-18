@@ -35,6 +35,14 @@ const list = [
         name: "Ponto24",
         path: "/images/carteiras/ponto24.png",
     },
+    {
+        name: "Wester-union",
+        path: "/images/carteiras/wester-union.png",
+    },
+    {
+        name: "Bitcoin",
+        path: "/images/carteiras/bitcoin.png",
+    },
 ];
 
 export function Main() {
@@ -90,6 +98,12 @@ export function Main() {
         if (data.name === "Ponto24") {
             setRequestFromInput("Insira o seu numero ponto24");
         }
+        if (data.name === "Wester-union") {
+            setRequestFromInput("Insira o seu identificador Wester-union");
+        }
+        if (data.name === "Bitcoin") {
+            setRequestFromInput("Insira o seu identificador Bitcoin");
+        }
     }
     async function changeRequestToInput(data) {
         if (data.name === "Ecobank") {
@@ -115,6 +129,12 @@ export function Main() {
         }
         if (data.name === "Ponto24") {
             setRequestToInput("Insira o seu numero ponto24");
+        }
+        if (data.name === "Wester-union") {
+            setRequestToInput("Insira o seu identificador Wester-union");
+        }
+        if (data.name === "Bitcoin") {
+            setRequestToInput("Insira o seu identificador Bitcoin");
         }
     }
 

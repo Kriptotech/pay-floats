@@ -1,7 +1,8 @@
 import React from "react";
 import style from "./styles.module.css";
-import { Eye, Fire, Info } from "phosphor-react";
+import { Eye, Info } from "phosphor-react";
 import { useNavigate } from "react-router-dom";
+import { Graphic } from "../graphic/Index";
 
 export function Main() {
     const navigate = useNavigate();
@@ -49,13 +50,20 @@ export function Main() {
         <div className={style.main_container}>
             <div className={style.main}>
                 <div className={style.box}>
-                    <small>
-                        Saldo Total <Eye weight="duotone" />
-                    </small>
-                    <strong>122233.2332</strong>
-                    <small>
-                        122233.2332 <Info weight="duotone" />
-                    </small>
+                    <div className={style.row_container}>
+                        <div className={style.row_left}>
+                            <small>
+                                Saldo Total <Eye weight="duotone" />
+                            </small>
+                            <strong>122233.2332</strong>
+                            <small>
+                                122233.2332 <Info weight="duotone" />
+                            </small>
+                        </div>
+                        <div className={style.row_right}>
+                            <Graphic />
+                        </div>
+                    </div>
 
                     <div className={style.box_row}>
                         <button onClick={() => navigate("/market")}>

@@ -4,6 +4,8 @@ import { LastNegociationTable } from "../last_negocitaions_table/Index";
 import { MyNegociationTable } from "../my_negocitaions_table/Index";
 import style from "./styles.module.css";
 
+import { Graphic } from "../graphic/Index";
+
 export function Main() {
     const [inNegociations, setInNegociations] = useState(true);
     const [lastNegociations, setLastNegociations] = useState(false);
@@ -11,6 +13,7 @@ export function Main() {
 
     return (
         <div className={style.market}>
+            <Graphic />
             <div className={style.market_options_container}>
                 <div className={style.market_options}>
                     <button

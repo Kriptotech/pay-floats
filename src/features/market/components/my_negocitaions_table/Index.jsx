@@ -19,6 +19,14 @@ export function MyNegociationTable() {
             name: "Paypal",
             path: "/images/carteiras/paypal.png",
         },
+        {
+            name: "Wester-union",
+            path: "/images/carteiras/wester-union.png",
+        },
+        {
+            name: "Bitcoin",
+            path: "/images/carteiras/bitcoin.png",
+        },
     ];
 
     return (
